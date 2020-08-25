@@ -74,7 +74,7 @@
 % The main document start here.
 
 % The following commands set up the material that appears in the header.
-\doclabel{Math 401: Homework 1}
+\doclabel{Math 426: Homework 1 (Part A)}
 \docauthor{Stefano Fochesatto}
 \docdate{\today}
 
@@ -103,5 +103,34 @@ Using the $polyval$ function:
   \includegraphics[width=\textwidth]{ex7.png}
 
   
+\end{exercise}
+
+\vspace{1in}
+
+\begin{exercise}{9} Let,
+  \begin{equation*}
+    logistic(x) = \frac{1}{1+e^{-x}}.
+  \end{equation*}
+
+  \begin{enumerate}
+    \item Following the example from section use matlab to define a function $logistic$ for this function.\\\\
+    \textbf{Answer:}
+    \lstinputlisting{myDiaryFile3}
+
+    
+    \item Verify that your function works correctly b computing $logistic(0), logistic(1)$ and $logistic([0,1])$. Do you obtain the right answers? (Hint: if you have a error when you test with vector input think about dot operators)\\\\
+    \textbf{Answer:}
+    \lstinputlisting{myDiaryFile4}
+    Note the .\string^(-1) notation. When applied to a vector .\string^(-1) inverts each entry individually, achieving the desired result. Also note that the notation $1./$ would achieve the same result.
+
+    \item Plot the logistic function over the range $-2 \leq x \leq 2$. Add a red square or diamond that marks the point $(1, logistic(1))$ \\\\
+    \textbf{Answer:}
+    \lstinputlisting{myDiaryFile6}
+    \includegraphics[width=\textwidth]{ex9.png}
+  \end{enumerate}
+  
+
+
+
 \end{exercise}
 \end{document}
