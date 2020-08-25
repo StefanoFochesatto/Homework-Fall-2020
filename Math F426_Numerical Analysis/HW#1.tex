@@ -12,6 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage{enumerate}
 \usepackage{listings}
+\usepackage{graphicx}
 % Comment the following line to use TeX's default font of Computer Modern.
 \usepackage{times,txfonts}
 
@@ -86,5 +87,21 @@ The last entry of this matrix should be $p(2)$ since 2 is the last entry of $x$ 
 
 \textbf{Solution:}
 \lstinputlisting{myDiaryFile}
+Using the $polyval$ function:
+\lstinputlisting{myDiaryFile1}
+\end{exercise}
+
+\vspace{1in}
+
+
+
+\begin{exercise}{7} Plot the curves $y = Ce^x$ for $C = 1$,$C = 1/2$, $C = 0$, $C = -1/2$ and $C = -1$ 
+  the range $-1 \leq x \leq 1$ all in the same figure. Add a helpful legend in your plot.\\
+
+  \textbf{Solution:}
+  \lstinputlisting{myDiaryFile2}
+  \includegraphics[width=\textwidth]{ex7.png}
+
+  
 \end{exercise}
 \end{document}
