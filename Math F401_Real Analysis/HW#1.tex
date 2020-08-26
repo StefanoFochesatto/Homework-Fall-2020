@@ -75,21 +75,54 @@
 % The following commands set up the material that appears in the header.
 \doclabel{Math 401: Homework 1}
 \docauthor{Stefano Fochesatto}
-\docdate{August 19, 2020}
+\docdate{\today}
 
 \begin{document}
 
-\begin{exercise}{1.2.5}
-Use the triangle inequality to establish the following inequalities:
+\begin{exercise}{1.2.6}
+Use the $triangle$ $inequality$ to establish the following inequalities:
 \begin{enumerate}[(a)]
-\item $|a-b| \le |a| + |b|$;
-\item $||a|-|b|| \le |a-b|$.
+\item $|a-b| \leq |a| + |b|$\\\\
+\textbf{Proof:} (Direct) Suppose $a,b \in \RR$. Note that, 
+\begin{equation*}
+  |a-b| = |a + (-b)|.
+\end{equation*}
+By the $triangle$ $inequality$ we know that,
+\begin{equation*}
+  |a + (-b)| \leq |a| + |(-b)|.
+\end{equation*}
+Note,
+\begin{equation*}
+  |a| + |(-b)| = |a| + |b|.
+\end{equation*}
+Therefore by substitution we arrive at,
+\begin{equation*}
+  |a-b| \leq |a| + |b|
+\end{equation*}
+ \qed
+
+
+ \item $||a|-|b|| \le |a-b|$.\\\\
+ \textbf{Proof:} (Direct) Suppose $a,b \in \RR$. Note that, 
+ \begin{equation*}
+  a = (a-b) + b.
+\end{equation*}
+Therefore,
+\begin{equation*}
+  |a| = |(a-b) + b|.
+\end{equation*}
+Thus by $triangle$ $inequality$ we know that,
+\begin{align*}
+  |a-b+b| &\leq |(a-b)| + |b|,\\
+  |a| &\leq |(a-b)| + |b|,\\
+  |a| - |b| &\leq |a-b|.
+\end{align*}
+\qed
+
 \end{enumerate}
 \end{exercise}
-\begin{proof}
-\end{proof}
 
-\begin{exercise}{1.2.6(b), (d)}
+\begin{exercise}{1.2.7(b), (d)}
 Given a function $f$ and a subset $A$ of its domain, let $f(A)$ represent the range of $f$ over the set A;
 that is, $f(a)=\{f(x):x\in A\}$.
 \end{exercise}
