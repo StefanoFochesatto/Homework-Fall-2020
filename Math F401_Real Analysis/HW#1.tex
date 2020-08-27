@@ -79,6 +79,9 @@
 
 \begin{document}
 
+
+
+
 \begin{exercise}{1.2.6}
 Use the $triangle$ $inequality$ to establish the following inequalities:
 \begin{enumerate}[(a)]
@@ -118,9 +121,18 @@ Thus by $triangle$ $inequality$ we know that,
   |a| - |b| &\leq |a-b|.
 \end{align*}
 \qed
-
 \end{enumerate}
 \end{exercise}
+
+
+
+
+
+
+
+
+
+
 
 \begin{exercise}{1.2.7(b), (d)}
 Given a function $f$ and a subset $A$ of its domain, let $f(A)$ represent the range of $f$ over the set A;
@@ -128,12 +140,39 @@ that is, $f(a)=\{f(x):x\in A\}$.
 \end{exercise}
 \begin{enumerate}
 \item[(b)] Find two sets $A$ and $B$ for which $f(A\cap B) \neq f(A)\cap f(B)$.
-\item[(d)] Form and prove a conjecture concerning $f(A\cup B)$ and $f(A)\cup f(B)$.
+\\
+\textbf{Proof:} (Direct) Suppose $f: \RR \to \RR$ such that $f(x) = x^2$. Let $A = \RR_{\leq 0}$ and $B = \RR_{\geq 0}$. Note.
+\begin{equation*}
+  f(A \cap B) = \{0\}
+\end{equation*}
+ and,
+ \begin{equation*}
+  f(A)\cap f(B) =  \RR_{\geq 0}
+ \end{equation*}
+ Thus  $f(A\cap B) \neq f(A)\cap f(B)$.
+
+\item[(d)] Form and prove a conjecture concerning $f(A\cup B)$ and $f(A)\cup f(B)$.\\\\
+ 
+\textbf{Conjecture:} (Direct) Let $f: \RR \to \RR$, if $A,B \subset \RR$ then $f(A\cup B) \subset f(A)\cup f(B)$\\\\
+\textbf{Proof:} Suppose  $f: \RR \to \RR$, $A,B \subset \RR$, and $y \in f(A\cup B)$. By the definition of the set $f(A\cup B)$
+we know that there exists some $x \in A\cup B$ such that $y = f(x)$. Note that $x \in A,B$ and it therefore must follow that $y \in f(A),f(B)$.
+Thus $y \in  f(A)\cup f(B) $ and $f(A\cup B) \subset f(A)\cup f(B)$.
+
+\qed
 \end{enumerate}
-\begin{proof}[Proof (b)]
-\end{proof}
-\begin{proof}[Proof (d)]
-\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{exercise}{1.2.8}
 Form the logical negation of each claim. Do not use the easy way out: "It is not the case that$\ldots$" 
@@ -148,10 +187,10 @@ irrational number.
 \end{exercise}
 \solution
 \begin{enumerate}[(a)]
-\item 
-\item 
-\item 
-\item 
+\item There exists $a,b \in \RR$ where $a<b$ and for all $n \in \Nats$, $a+(1/n)<b$.
+\item If $x \in \RR$ then there exists $a,b \in \RR$ such that $a<b$ and $x < a$ and $x > b$ 
+\item There exists some $n \in \Nats$ such that $\sqrt {n}$ is both a natural number and irrational
+\item There exists some $x \in \RR$ such that $n>x$ for every $n \in \Nats$
 \end{enumerate}
 
 \begin{exercise}{1.2.9} Show that the sequence $(x_1, x_2, x_3,\ldots)$ defined in Example
