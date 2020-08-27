@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 AUG 2020 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 AUG 2020 10:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,52 +292,77 @@ File: ot1txr.fd 2000/12/15 v3.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+txsya on input line 85.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 86.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 85.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 86.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 85.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 86.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 85.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 86.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
 
-Overfull \hbox (4.97182pt too wide) in paragraph at lines 124--126
-\OT1/txr/bx/n/12 Exercise 1.2.9: \OT1/txr/m/n/12 Show that the se-quence $(\OML/txmi/m/it/12 x[]; x[]; x[]; []\OT1/txr/m/n/12 )$ de-fined in Ex-am-ple 1.2.7 is bounded
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
  []
 
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-[2] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#1.aux) ) 
+
+Overfull \hbox (4.97182pt too wide) in paragraph at lines 196--198
+\OT1/txr/bx/n/12 Exercise 1.2.9: \OT1/txr/m/n/12 Show that the se-quence $(\OML/txmi/m/it/12 x[]; x[]; x[]; []\OT1/txr/m/n/12 )$ de-fined in Ex-am-ple 1.2.7 is bounded
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[3] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#1.aux) ) 
 Here is how much of TeX's memory you used:
  2380 strings out of 492616
  30241 string characters out of 6129482
- 97297 words of memory out of 5000000
+ 98283 words of memory out of 5000000
  6274 multiletter control sequences out of 15000+600000
  24735 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,10n,43p,347b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,43p,347b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#1.pdf" (2 pages, 50623 bytes).
+Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#1.pdf" (3 pages, 54734 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
