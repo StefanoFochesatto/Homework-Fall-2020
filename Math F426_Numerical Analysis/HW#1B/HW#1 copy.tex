@@ -412,29 +412,84 @@
   \begin{equation*}
     x = 0, \frac{\pi}{6}, \frac{2\pi}{6}, \ldots , 2\pi.
   \end{equation*}
-  Label the columns of your table.
+  Label the columns of your table.\\\\
 \textbf{Solution:}
+\lstinputlisting{ex4}
 
 
 
 \end{exercise}
 \vspace{1in}
 
-\begin{exercise}{5}
-\textbf{Solution:}
+\begin{exercise}{5}  Download the file $plotfunction1.m$ from the book's web page and execute it. This should produce the two plots on the next page. 
+  The top plot shows the function $f(x) = 2cos(x) - e^{x}$ for $-6 \le x \le 3$, and the from this plot it appears that $x$ has three roots in this interval. 
+  The bottom plot is a zoomed view near one of these roots, showing that $x$ has a root neat $x = -1.454$. 
+  Note the different vertical scale as well as the different horizontal scale of this plot. 
+  Not also that when we zoo, in on this function it looks neatly linear over this short interval. This will be important when we study numerical methods for approximating roots.\\\\
+
+
+\begin{enumerate}
+
+  \item [\textbf{a.}] Modify the script so that the bottom plot shows a zoomed view near the leftmost root. Write an estimate of the value of this root to at least 3 decimal places.
+  You may find it useful to first use the zoom feature in MATLAB to see approximately where the root is and then to choose your axis command for the second plot appropriately.\\\\
+  \textbf{Solution:} 
+  \vspace{1in}
+  \lstinputlisting{plotfunction1.m}
+  \begin{center}
+    \includegraphics[width=\textwidth]{plotfunction.png}
+  \end{center}
+  The leftmost root for the function $f(x) = 2cos(x) - e^{x}$ on the interval $-6 \le x \le 3$ is at approximately $x = -4.717$.
+
+
+
+
+  \item [\textbf{b.}] Edit the script from part a to plot the function,
+  \begin{equation*}
+    f(x) = \frac{4x sin(x) - 3}{2 + x^2}
+  \end{equation*}
+  over the range $ 0 \le x \le 4$ and also plot a zoomed view neat the leftmost root.
+   Write an estimate of the value of the root from the plots that is accurate to 3 decimal places.
+  Note that once you have defined the vector $x$ properly, you will need to use appropriate components multiplication and division to evaluate this expression.\\\\
+  \textbf{Solution:} 
+  
+  \lstinputlisting{plotfunction2.m}
+  \begin{center}
+    \includegraphics[width=\textwidth]{plotfunction2.png}
+  \end{center}
+  
+  The leftmost root for the function $f(x) = \frac{4x sin(x) - 3}{2 + x^2}$ on the interval $-6 \le x \le 3$ is at approximately $x = .933$.
+  \end{enumerate}
+
 \end{exercise}
 \vspace{1in}
 
 
-\begin{exercise}{7}
+
+
+
+
+
+\begin{exercise}{7} Use MATLab to plot the circles,
+  \begin{align*}
+    (x - 2)^2 + (y - 2)^2 &= 2,\\
+    (x - 2.5)^2 + (y)^2 &= 3.5,
+    \end{align*}
+  and zoom in on the plot to determine approximately where the circles intersect.
 \textbf{Solution:}
+
+\lstinputlisting{circle.m}
+\begin{center}
+  \includegraphics[width=\textwidth]{circle.png}
+\end{center}
+The leftmost intersection is is at approximately $(.691,.454)$ and the rightmost intersection is at approximately $(3.212, 1.730)$.
 \end{exercise}
 \vspace{1in}
 
 
 
-\begin{exercise}{9}
-\textbf{Solution:}
+\begin{exercise}{9} Create a $5 x 5$ magic square and verify using the sum command in Matlab that the sums of the columns, rows and diagonals are equal.\\\\
+\textbf{Solution:} 
+\lstinputlisting{ex9}
 \end{exercise}
 \vspace{1in}
 

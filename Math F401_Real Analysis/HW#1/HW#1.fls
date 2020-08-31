@@ -1,7 +1,7 @@
-PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis
+PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.tex
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.log
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.tex
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.log
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -43,9 +43,9 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfont
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\txfonts.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.aux
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.aux
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.aux
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxsy.fd
@@ -95,7 +95,7 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.pdf
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.pdf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
@@ -124,7 +124,7 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#1\HW#1.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  27 AUG 2020 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  30 AUG 2020 00:47
 entering extended mode
-**"c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1 copy.tex"
-("c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1 copy.tex"
+**"c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1B/HW#1 copy.tex"
+("c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1B/HW#1 copy.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07> ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -260,7 +260,7 @@ LaTeX Info: Redefining \openbox on input line 1064.
 File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count199
 \l__pdf_internal_box=\box49
-) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux")
+) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux")
 \openout1 = `"HW#1 copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 81.
@@ -413,19 +413,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--347
 
  []
 
-[3] [4] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux") ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 414--417
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex4"
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1.
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd"
+File: ts1txr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 4.
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxr.fd"
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 4.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 424--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--429
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction1.m")
+<plotfunction.png, id=22, 779.16093pt x 731.73375pt>
+File: plotfunction.png Graphic file (type png)
+<use plotfunction.png>
+Package pdftex.def Info: plotfunction.png  used on input line 439.
+(pdftex.def)             Requested size: 433.62001pt x 407.22241pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 439--440
+ [] 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 449--454
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.m" [6 <c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1B/plotfunction.png>])
+<plotfunction2.png, id=29, 722.7pt x 602.25pt>
+File: plotfunction2.png Graphic file (type png)
+<use plotfunction2.png>
+Package pdftex.def Info: plotfunction2.png  used on input line 457.
+(pdftex.def)             Requested size: 433.62001pt x 361.35278pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 457--458
+ [] 
+ []
+
+[7 <c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1B/plotfunction2.png (PNG copy)>] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.m" [8])
+<circle.png, id=37, 883.04906pt x 715.17188pt>
+File: circle.png Graphic file (type png)
+<use circle.png>
+Package pdftex.def Info: circle.png  used on input line 482.
+(pdftex.def)             Requested size: 433.62001pt x 351.19025pt.
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 490--492
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex9" [10 <c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#1B/circle.png>]) [11] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux") ) 
 Here is how much of TeX's memory you used:
- 5092 strings out of 481212
- 70601 string characters out of 2899842
- 317571 words of memory out of 3000000
- 20616 multiletter control sequences out of 15000+200000
- 552636 words of font info for 71 fonts, out of 3000000 for 9000
+ 5442 strings out of 481212
+ 74950 string characters out of 2899842
+ 324571 words of memory out of 3000000
+ 20941 multiletter control sequences out of 15000+200000
+ 554613 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,45p,364b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.pdf" (4 pages, 49592 bytes).
+ 36i,14n,45p,370b,1734s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.pdf" (11 pages, 165947 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

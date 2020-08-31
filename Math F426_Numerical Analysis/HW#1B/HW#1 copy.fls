@@ -1,7 +1,7 @@
-PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis
+PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.tex
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.log
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.tex
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.log
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -59,9 +59,9 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfont
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\txfonts.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxsy.fd
@@ -115,7 +115,7 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.pdf
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.pdf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
@@ -132,8 +132,50 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1 copy.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex4
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex4
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex4
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\tcxr.tfm
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\tcxr.vf
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtcxr.tfm
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction1.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction1.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction1.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\plotfunction2.png
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.m
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\circle.png
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex9
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex9
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\ex9
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#1B\HW#1 copy.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
