@@ -82,6 +82,14 @@
 
 
 
+
+
+
+
+
+
+
+
 \begin{exercise}{1.2.6}
 Use the $triangle$ $inequality$ to establish the following inequalities:
 \begin{enumerate}[(a)]
@@ -121,6 +129,11 @@ Thus by $triangle$ $inequality$ we know that,
   |a| - |b| &\leq |a-b|.
 \end{align*}
 
+Now consider,
+\begin{equation*}
+  b = (b-a) + a.
+\end{equation*}
+Therefore we can surmise,
 \begin{equation*}
   |b| = |(b-a) + a|.
 \end{equation*}
@@ -128,16 +141,12 @@ Thus by $triangle$ $inequality$ we know that,
 \begin{align*}
   |b-a+a| &\leq |(b-a)| + |a|,\\
   |b| &\leq |(b-a)| + |a|,\\
-  |b| - |a| &\leq |b-a|.
+  |b| - |a| &\leq |b-a|,\\
 \end{align*}
 
-Since 
+Therefore it follows that,
 \begin{equation*}
-  |a - b| = |b - a|,
-\end{equation*}
-We get,
-\begin{equation*}
-  ||a|-|b|| \le |a-b|
+  ||a|-|b|| \le |a-b|.
 \end{equation*}
 
 
@@ -198,98 +207,187 @@ Thus $y \in  f(A)\cup f(B) $ and $f(A\cup B) \subset f(A)\cup f(B)$.
 
 
 
-\begin{exercise}{1.2.8}
-Form the logical negation of each claim. Do not use the easy way out: "It is not the case that$\ldots$" 
-is not permitted
-\begin{enumerate}[(a)]
-\item For all real numbers satisfying $a<b$, there exists $n\in\Nats$ such that $a+(1/n)<b$.
-\item Between every two distinct real numbers there is a rational number.
-\item For all natural numbers $n\in\Nats$, $\sqrt{n}$ is either a natural number or is an
-irrational number.
-\item Given any real number $x\in\Reals$ there exists $n\in\Nats$ satisfying $n>x$.
-\end{enumerate}
-\end{exercise}
-\solution
-\begin{enumerate}[(a)]
-\item There exists $a,b \in \RR$ where $a<b$ and for all $n \in \Nats$, $a+(1/n)<b$.
-\item If $x \in \RR$ then there exists $a,b \in \RR$ such that $a<b$ and $x < a$ and $x > b$ 
-\item There exists some $n \in \Nats$ such that $\sqrt {n}$ is both a natural number and irrational
-\item There exists some $x \in \RR$ such that $n>x$ for every $n \in \Nats$
-\end{enumerate}
+\begin{exercise}{1.2.11}
+  Form the logical negation of each claim. Do not use the easy way out: "It is not the case that$\ldots$" 
+  is not permitted
+  \begin{enumerate}[(a)]
+  \item For all real numbers satisfying $a<b$, there exists $n\in\Nats$ such that $a+(1/n)<b$.
+  \item There exist a real number $x>0$ such that $x<1/n$ for all $n\in\Nats$.
+  \item Between every two distinct real numbers there is a rational number.
+  \end{enumerate}
+  \end{exercise}
+  \solution
+  \begin{enumerate}[(a)]
+  \item There exists $a,b \in \RR$ where $a<b$ and for all $n \in \Nats$, $a+(1/n)<b$.
+  \item For all real numbers $x > 0$, there exists $n \in \NN$ such that $x < \frac{1}{n}$
+  \item If $x \in \RR$ then there exists $a,b \in \RR$ such that $a<b$ and $x < a$ and $x > b$ 
+  \end{enumerate}
+  \vspace{1in}
 
 
 
 
 
+
+
+
+
+\begin{exercise}{[1.2 Supplement]} Show that the sequence $(x_1, x_2, x_3,\ldots)$ defined in Example
+  1.2.7 is bounded above by 2.  That is, show that for every $i\in\Nats$, $x_i\le 2$.
+  \end{exercise}
+  \begin{proof} (Induction): 
+    
+    \textbf{Base Case:} Let $n = 1$,
+    \begin{equation*}
+      x_n = 1. 
+    \end{equation*}
+    By definition, and obviously $1 \le 2$.
+
+    \textbf{Induction Hypothesis:}
+    Suppose that for some $n \in \NN$, 
+    \begin{equation*}
+      x_n \le 2
+    \end{equation*}
+
+    By definition we know that,
+    \begin{align*}
+      x_{n+1} &= \frac{1}{2}x_n + 1,\\
+      2(x_{n+1} - 1) &= x_n.
+    \end{align*} 
+    By our Induction hypothesis we know that,
+    \begin{align*}
+      2(x_{n+1} - 1) &\le 2,\\
+      (x_{n+1} - 1) &\le 1,\\
+      x_{n+1} &\le 2.
+    \end{align*}
+    Thus by Induction we have shown that for every $i\in\Nats$, $x_i\le 2$.
+
+
+
+
+
+  \end{proof}  
 \vspace{1in}
 
 
 
-\begin{exercise}{1.2} Show that the sequence $(x_1, x_2, x_3,\ldots)$ defined in Example
-1.2.7 is bounded above by 2.  That is, show that for every $i\in\Nats$, $x_i\le 2$.
-\end{exercise}
-\begin{proof}
-\end{proof}
-
-
-
-\vspace{1in}
 
 
 
 
 
-\begin{exercise}{1.3.4}
-Assume that $A$ and $B$ are nonempty, bounded above, and satisfy $B\subseteq A$.
-Show that $\sup B \le \sup A$.
-\end{exercise}
-\begin{proof}
-\end{proof}
-\vspace{1in}
+\begin{exercise}{1.3.5} As in Example 1.3.7, let $A \subseteq \RR$ be nonempty and bounded above, and let $c \in \RR$. 
+  This time define the set $cA = \{ca: a\in \RR\}$  
+  \begin{enumerate}[(a)]
+  \item If $c\ge 0$, show that $\sup(cA) = c\sup(A)$.
+  \item Postulate a similar statement for $\sup(cA)$ when $c<0$.
+  \end{enumerate}
+  \end{exercise}
+  \begin{proof}[Proof (a)] 
+    Suppose some $s \in \RR$ such that $s = sup(A)$. By the definition of supremum we know that for all $a \in A$, $a \le s$.
+  Multiplying by $c \in \RR$ on both sides we get, $ca \le cs$, by the definition of upper bound and the set $cA$ whe know that $csup(A)$ is an upper bound for $cA$. \\
 
-\begin{exercise}{1.3.5}  Let $A$ be bounded above and let $c\in\Reals$.
-Define the sets $c+A = \{a+c:a\in A\}$ and $cA = \{ca:a\in A\}$.
-\begin{enumerate}[(a)]
-\item Show that $\sup(c+A) = c + \sup(A)$.
-\item If $c\ge 0$, show that $\sup(cA) = c\sup(A)$.
-\item Postulate a similar statment for $\sup(cA)$ when $c<0$.
-\end{enumerate}
-\end{exercise}
-\begin{proof}[Proof (a)]
-\end{proof}
-\begin{proof}[Proof (b)]
-\end{proof}
-Statement for part (c): 
-\vspace{1in}
+Case 1: $c = 0$ 
+  Note if $c$ is $c = 0$ then $cA = \{0\}$ and subsequently, $\sup(cA) = c\sup(A)$. \\
 
-\begin{exercise}{1.3.6} Compute, without proof, the suprema and infima of the 
-following sets.
-\begin{enumerate}[(a)]
-\item $\{n\in\Nats: n^2<10\}$.
-\item $\{n/(n+m): n,m\in\Nats\}$.
-\item $\{n/(2n+1): n\in\Nats\}$.
-\item $\{n/m: \text{$m,n\in\Nats$ with $m+n\le 10$}\}$.
-\end{enumerate}
-\end{exercise}
-\solution
-\begin{enumerate}[(a)]
-\item
-\item
-\item
-\item
-\end{enumerate}
-\vspace{1in}
+  Case 2: $c > 0$\\
+    Let $b$ be an arbitrary upper bound for the set $cA$. Note by definition,
+    \begin{align*}
+      ca &\le b\\
+      a &\le \frac{b}{c}
+    \end{align*} 
+    Since $s$ is the least upper bound for the set $A$ we can surmise that, therefore we know that $\frac{b}{c}$ is an upper bound for the set $A$ and,
+    \begin{equation*}
+      s \le \frac{b}{c}
+    \end{equation*}
+    and therefore,
+    \begin{equation*}
+      sc \le b.
+    \end{equation*}
+    Thus $sc$ is the least upper bound for the set $cA$, and 
+    \begin{equation*}
+      \sup(cA) = c\sup(A).
+    \end{equation*}
+  \end{proof}
 
-\begin{exercise}{1.3.7} Prove that if $a$ is an upper bound for $A$ an dif $a$ is also an element of $A$,
+
+  [Postulate] If $c < A$ and $A$ is a bounded set, then
+  \begin{equation*}
+    sup(cA) = cinf(A)
+  \end{equation*}
+  
+
+
+  \vspace{1in}
+
+
+
+
+
+
+
+
+
+
+\begin{exercise}{1.3.7} Prove that if $a$ is an upper bound for $A$ and if $a$ is also an element of $A$,
 then $a=\sup A$.
 \end{exercise}
-\begin{proof}
+\begin{proof} (Contradiction): Suppose that $a$ is an upper bound for $A$ and $a$ is also an element of $A$, and $a \neq sup(A)$. Let $b = sup(A)$, note that by definition $b < a$ and $b \ge c$ for all $c \in A$. Also note that $a \in A$ and recall $b < a$. Thus $b = sub(A)$  and $b \neq sub(A)$.
 \end{proof}
 \vspace{1in}
 
-\begin{exercise}{1.3.8}  If $\sup A < \sup B$ then show that there exists an element $b\in B$ that is an upper bound for $A$.
-\end{exercise}
-\begin{proof}
-\end{proof}
+
+
+
+
+
+\begin{exercise}{1.3.8} Compute, without proof, the suprema and infima of the 
+  following sets.
+  \begin{enumerate}[(a)]
+  \item $\{m/n: \text{ $m,n\in\Nats$ with $m<n$} \}$.
+  \item $\{(-1)^m/n: n,m\in\Nats\}$.
+  \item $\{n/(3n+1): n\in\Nats\}$.
+  \item $\{m/(m+n):m,n\in\Nats\}$.
+  \end{enumerate}
+  \end{exercise}
+  \solution
+  \begin{enumerate}[(a)]
+  \item  Infimum: 0  
+  
+  Supremum: 1
+  \item
+  Infimum: -1 
+  
+  Supremum: 1
+  \item
+  Infimum: $\frac{1}{4}$
+  
+  Supremum: $\frac{1}{3}$
+  \item
+  Infimum: 0  
+  
+  Supremum: 1
+\end{enumerate}
+  
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
