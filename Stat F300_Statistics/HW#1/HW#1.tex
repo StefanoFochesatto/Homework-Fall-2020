@@ -12,6 +12,9 @@
 \usepackage{fancyhdr}
 \usepackage{enumerate}
 \usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{soul}
+\usepackage{pdfpages}
 % Comment the following line to use TeX's default font of Computer Modern.
 \usepackage{times,txfonts}
 
@@ -91,7 +94,7 @@
 
 
 
-\begin{exercise}{1.14} The accompanying data set consists of observations on shower-flow rate for a sample of $n = 129$ houses in Perth, Australia
+\begin{exercise}{1.14} The accompanying data set consists of observations on shower-flow rate for a sample of $n = 129$ houses in Perth, Australia.
   \begin{enumerate}
     \item[\textbf{a.}] Construct a stem-and-leaf display of the data.\\
     \textbf{Solution:}
@@ -171,7 +174,7 @@
     \begin{center}
 \includegraphics[width=\textwidth]{hist.png}      
     \end{center}
-    The distribution appears to be roughly unimodal and right skewed. The data set contains outliers at (21,24,32) as there are gaps in the histogram. Spread appears to be between 4 to 17 with a majority of corporations having 9 members.
+    The distribution appears to be roughly unimodal and right skewed. The data set contains outliers at (21,24,32) as there are gaps in the histogram. Spread appears to be between 4 to 17 with a majority of corporations having 9 members. 
 
     \vspace{.5in}
      
@@ -325,29 +328,251 @@ From the $r$ computation we can see that the $Median = 127.4$ and the $Mean = 12
 
 
 
-\begin{exercise}{1.44}
+\begin{exercise}{1.44} Poly (3-hydroxybutyrate) (PHB), a semicrystalline polymer that is fully biodegradable and bio-compatible,
+  is obtained from renewable resources. From a sustainability perspective, PHB offers many attractive properties though it is more expensive
+  to produce than standard plastics. The accompanying data on melting point ($\degree C$) for each 12 specimens of the polymer using a differential scanning
+  calorimeter. 
+\begin{enumerate}
+  \item[\textbf{a.}] Compute the sample range.\\
+  
+  \textbf{Solution:} 
+  \begin{lstlisting}
+    >   View(ex01.44)
+    > x <- ex01.44$X.Melting_Point.
+    > max(x)-min(x)
+      [1] 2.3
+  \end{lstlisting}
+  Therefore the sample range is 2.3 $\degree C$.
+  \vspace{.5in}
+
+
+  \item[\textbf{b.}] Compute the sample variance $s^2$ from the definition. [Hint: First subtract 180 from each observation.]\\
+  
+  \textbf{Solution:}
+  Recall the definition of $s^2$,
+  \begin{equation*}
+    s^2 = \sum_{i = 1}^n (x_i - \overline{x})^2 \cdot \frac{1}{n-1}.
+  \end{equation*}
+  From the r computation,
+  \begin{lstlisting}
+  > x <- ex01.44$X.Melting_Point.
+  > m = mean(x)
+  > y = x-m
+  > sum(y^2)/11
+    [1] 0.5244697
+  \end{lstlisting}
+  we get that the sample variance, $s^2 = 0.5244697$.
+  \vspace{.5in}
+
+
+  \item[\textbf{c.}] Compute the sample standard deviation $s$ .\\
+  
+  \textbf{Solution:}
+  By the definition of sample standard deviation we know that it is simply the positive square root of the sample variance. Thus $s = 0.7242028$
+   
+\end{enumerate}
 \end{exercise}
 \vspace{1in}
 
 
-\begin{exercise}{1.50}
+
+
+
+
+
+\begin{exercise}{1.50} In 1997 a woman sued a computer keyboard manufacturer, charging that her repetitive stress injuries were caused by the keyboard.
+  The injury awarded about 3.5 million for pain and suffering, but the court then set aside that award as being unreasonable compensation. In making this 
+  determination, the court identifies a "normative" group of 27 similar cases and specifies a reasonable award as one within two standard deviations of the mean of the awards in the 27 cases.
+  What is the maximum possible amount that could be awarded under the two-standard-deviation rule?\\
+  
+  \textbf{Solution:} 
+  \begin{lstlisting}
+    > x <- ex01.50$X.awards.
+    > m = mean(x)
+    > ss = sd(x)
+    > m+2*ss
+      [1] 1961.158
+  \end{lstlisting}
+  The maximum amount that could be awarded under the 2-standard-deviation rule is \$1,961,158. Any more would not be within 2 standard deviations.
 \end{exercise}
 \vspace{1in}
 
 
-\begin{exercise}{1.56}
+
+
+
+
+
+
+
+\begin{exercise}{1.56} The following data on distilled alcohol content for a sample of 35 port wines. Each value is an average of two duplicate measurements.
+  Use methods from this chapter, including a boxplot that show outliers, to describe and summarize the data.\\
+
+  \textbf{Solution:}
+  Analyzing the data with r,
+  \begin{lstlisting}
+    > x <- ex01.56$X.alcohol
+    > fivenum(x)
+    Minimum   Lower Quartile  Median  Upper Quartile  Maximum 
+    15.30       18.34        19.20        19.76       23.78 
+    > mean(x)
+      [1] 19.25743
+    > sd(x)
+      [1] 1.831662
+    > var(x)
+      [1] 3.354984
+    > IQR(x)
+      [1] 1.42
+    > boxplot(x, horizontal = TRUE, ylab = 'Port Wines',
+      +         xlab = 'Distilled Alcohol Content (%)', col = "orange",
+      +         border = "brown", notch = TRUE)
+  \end{lstlisting}
+  \begin{center}
+    \includegraphics[width=\textwidth]{Boxplot.png}      
+  \end{center}
+  Firstly we can see that there is a relatively small $\delta$ between the upper/lower forth and the median, the relatively small IQR and the $\delta$ between the median and the mean, 
+  despite the large number of positive outliers demonstrated in the
+  boxplot suggests that most of the data points are grouped between 18 to 20 percent. Furthermore this means that the representative value could be either the mean or median.
+
+
+
+
+
+
 \end{exercise}
 \vspace{1in}
 
 
 
-\begin{exercise}{2.4}
+\begin{exercise}{2.4} Each of a sample of four home mortgages is classifies as fixed rate (F) or variable rate (V).\\
+
+  \begin{enumerate}
+    \item[\textbf{a.}] What are the 16 outcomes of $s$\\
+
+    \textbf{Solution:}
+    \begin{equation*}
+    s = \begin{bmatrix}
+      FFFF & VFFF & FVFV & VVFV\\
+      FFFV & FFVV & VFFV & VFVV\\
+      FFVF & FVVF & VFVF & FVVV\\
+      FVFF & VVFF & VVVF & VVVV
+    \end{bmatrix}
+    \end{equation*}
+    \vspace{.5in}
+
+    
+    
+    
+    
+    \item[\textbf{b.}] Which outcomes are in the event that exactly three of the selected mortgages are fixed?\\
+    
+    \textbf{Solution:} 
+    \begin{equation*}
+     \begin{bmatrix}
+        VFFF \\
+        FFFV \\
+        FFVF \\
+        FVFF 
+      \end{bmatrix}
+      \end{equation*}
+    \vspace{.5in}
+    
+    
+    
+    
+    
+    \item[\textbf{c.}] Which outcomes are in the event that all four mortgages are of the same type?\\
+     
+    \textbf{Solution:}
+    \begin{equation*}
+      \begin{bmatrix}
+        FFFF \\
+        VVVV
+    \end{bmatrix}
+    \end{equation*}
+    \vspace{.5in}
+    
+    
+    
+    
+    
+    \item[\textbf{d.}] Which outcomes are in the event that at most one of the four is a variable-rate mortgage?\\
+    
+    \textbf{Solution:}
+    \begin{equation*}
+      \begin{bmatrix}
+        FFFF \\
+        FFFV \\
+        FFVF \\ 
+        FVFF \\
+        VFFF 
+      \end{bmatrix}
+      \end{equation*}
+
+    \vspace{.5in}
+    
+    
+    
+    
+    \item[\textbf{e.}] What is the union of the events in parts (c) and (d), and what is the intersection of these two events?\\
+     
+    \textbf{Solution:}
+    \begin{equation*}
+      c \cup d =       
+      \begin{bmatrix}
+        VFFF \\
+        FFFV \\
+        FFVF \\
+        FVFF 
+      \end{bmatrix}
+      \end{equation*}
+
+      \begin{equation*}
+        c \cap d =       
+        \begin{bmatrix}
+          FFFF 
+        \end{bmatrix}
+        \end{equation*}
+    \vspace{.5in}
+    
+    
+    
+    \item[\textbf{f.}] What is the union of the events in parts (c) and (b), and what is the intersection of these two events?\\
+     
+    
+    \textbf{Solution:}
+    \begin{equation*}
+      c \cup b =       
+      \begin{bmatrix}
+        VVVV \\
+        FFFF \\
+        FFFV \\
+        FFVF \\ 
+        FVFF \\
+        VFFF 
+      \end{bmatrix}
+      \end{equation*}
+
+      \begin{equation*}
+        c \cap b = \varnothing
+        \end{equation*}
+
+  \end{enumerate}
 \end{exercise}
 \vspace{1in}
 
 
-\begin{exercise}{2.9}
+
+
+\begin{exercise}{2.9} Use Venn Diagrams to verify the following two relationships for any events $A$ and $B$,
+  \begin{enumerate}
+    \item[\textbf{a.}] $(A \cap B)' = A' \cup B'$ 
+    \item[\textbf{b.}] $(A \cup B)' = A' \cap B'$
+  \end{enumerate}
 \end{exercise}
 \vspace{1in}
+
+
+\includepdf[pages=-]{venn}
 
 \end{document}
