@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  1 SEP 2020 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  8 SEP 2020 21:28
 entering extended mode
 **"c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#2/StefanoFochesatto-HW2.tex"
 ("c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#2/StefanoFochesatto-HW2.tex"
@@ -150,7 +150,29 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read2
-) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty"
+) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty"
+\lst@mode=\count191
+\lst@gtempboxa=\box47
+\lst@token=\toks32
+\lst@length=\count192
+\lst@currlwidth=\dimen154
+\lst@column=\count193
+\lst@pos=\count194
+\lst@lostspace=\dimen155
+\lst@width=\dimen156
+\lst@newlines=\count195
+\lst@lineno=\count196
+\lst@maxwidth=\dimen157
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count197
+\lst@skipnumbers=\count198
+\lst@framebox=\box48
+) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty"
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 ) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfonts.sty"
 Package: txfonts 2008/01/22 v3.2.1
@@ -241,42 +263,42 @@ LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 ) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count191
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count199
+\l__pdf_internal_box=\box49
 ) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\StefanoFochesatto-HW2.aux")
 \openout1 = `StefanoFochesatto-HW2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 91.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 91.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 93.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 93.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 91.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 91.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 93.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 91.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 91.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 93.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 91.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 91.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 93.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 91.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 93.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd"
 File: ot1txr.fd 2000/12/15 v3.1
 )
@@ -316,65 +338,127 @@ File: ot1txr.fd 2000/12/15 v3.1
 
 ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
-\scratchdimen=\dimen154
-\scratchbox=\box48
-\nofMPsegments=\count193
-\nofMParguments=\count194
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count195
-\MPscratchDim=\dimen155
-\MPnumerator=\count196
-\makeMPintoPDFobject=\count197
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count266
+\scratchdimen=\dimen158
+\scratchbox=\box50
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen159
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks34
 ) ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
+\c@lstlisting=\count272
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 94.
-LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 94.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 96.
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 96.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd"
 File: ot1txtt.fd 2000/12/15 v3.1
+) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\largest.m"
+LaTeX Font Info:    Trying to load font information for OML+txr on input line 4.
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxr.fd"
+File: omltxr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (22.79938pt too wide) in paragraph at lines 110--117
+LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 4.
+) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\largest.txt"
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 8.
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd"
+File: ts1txr.fd 2000/12/15 v3.1
+))
+Overfull \hbox (22.79938pt too wide) in paragraph at lines 108--115
 \OT1/txr/m/n/12 works by com-put-ing \OT1/txtt/m/n/12 nextprime(5)\OT1/txr/m/n/12 , \OT1/txtt/m/n/12 nextprime(6)\OT1/txr/m/n/12 , \OT1/txtt/m/n/12 nextprime(-1) \OT1/txr/m/n/12 and \OT1/txtt/m/n/12 nextprime(100)\OT1/txr/m/n/12 . 
  []
 
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 129.
-("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd"
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\nextprime.m" [1{C:/Users/Stefano Fochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+]) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\nextprime")
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 123.
+ ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 129.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 123.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 129.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 123.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 129.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 123.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
-) [1{C:/Users/Stefano Fochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+) [2] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\buildseq.m"
+Overfull \hbox (48.7849pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 156.
- ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd"
-File: ts1txr.fd 2000/12/15 v3.1
-) [2] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\StefanoFochesatto-HW2.aux") ) 
+) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\buildseq")
+Overfull \hbox (19.9846pt too wide) in paragraph at lines 5--150
+[][][][][][][][][][][][][][]
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\HW2Bisect.m" [4]) ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\HW2Bisect" [5])
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
+
+ []
+
+[6] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\HWBisect.2"
+Overfull \hbox (293.58739pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [7]
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\plotTaylor.m"
+Overfull \hbox (12.78453pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[8])
+
+c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#2/StefanoFochesatto-HW2.tex:239: Package keyval Error: Title undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ...h, Title = "Please Zoom"]{plotTaylor.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<plotTaylor.png, id=36, 512.66531pt x 449.42906pt>
+File: plotTaylor.png Graphic file (type png)
+<use plotTaylor.png>
+Package pdftex.def Info: plotTaylor.png  used on input line 239.
+(pdftex.def)             Requested size: 433.62001pt x 380.13748pt.
+[9 <c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F426_Numerical Analysis/HW#2/plotTaylor.png (PNG copy)>] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\StefanoFochesatto-HW2.aux") ) 
 Here is how much of TeX's memory you used:
- 3844 strings out of 481212
- 53042 string characters out of 2899842
- 288196 words of memory out of 3000000
- 19367 multiletter control sequences out of 15000+200000
+ 5516 strings out of 481212
+ 77112 string characters out of 2899842
+ 330365 words of memory out of 3000000
+ 20995 multiletter control sequences out of 15000+200000
  555441 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,45p,381b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,45p,381b,1664s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\StefanoFochesatto-HW2.pdf" (2 pages, 55349 bytes).
+Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#2\StefanoFochesatto-HW2.pdf" (9 pages, 102332 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

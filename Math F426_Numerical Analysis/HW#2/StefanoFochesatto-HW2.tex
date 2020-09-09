@@ -13,6 +13,8 @@
 \usepackage{graphicx}
 \usepackage{enumerate}
 \usepackage{verbatim}
+\usepackage{listings}
+
 
 % Comment the following line to use TeX's default font of Computer Modern.
 \usepackage{times,txfonts}
@@ -98,14 +100,10 @@ and \texttt{largest(5,5)}.
 \end{exercise}
 \solution
 Code:
-\begin{verbatim}
-Your code here!
-\end{verbatim}
+\lstinputlisting{largest.m}
 
 Output:
-\begin{verbatim}
-Your output here!
-\end{verbatim}
+\lstinputlisting{largest.txt}
 
 \begin{exercise}{DM 2} Write a small Matlab function \texttt{nextprime(x)} 
 that takes a positive integer argument and returns the smallest 
@@ -117,14 +115,10 @@ and \texttt{nextprime(100)}.
 \end{exercise}
 \solution
 Code:
-\begin{verbatim}
-Your code here!
-\end{verbatim}
+\lstinputlisting{nextprime.m}
 
 Output:
-\begin{verbatim}
-Your output here!
-\end{verbatim}
+\lstinputlisting{nextprime}
 
 \begin{exercise}{DM 3} Define a sequence of numbers by $x_1=1$ and $x_{k+1}=\frac{1}{2}x_{k} + 1$.  Write a Matlab function \texttt{buildseq(N)} that returns an array
 with the first \texttt{N} elements of the sequence in it.  For example,
@@ -135,18 +129,30 @@ to take advantage of the Matlab command \texttt{zeros}.
 \end{exercise}
 \solution
 Code:
-\begin{verbatim}
-Your code here!
-\end{verbatim}
+\lstinputlisting{buildseq.m}
 
-Expected Output:
 
-Your explanation here.
+Expected Output: 
+\begin{equation*}
+	x_1 = 1
+\end{equation*}
+\begin{equation*}
+	x_2 = \frac{1}{2}*(1) + 1 = \frac{3}{2}
+\end{equation*}
+\begin{equation*}
+	x_3 = \frac{1}{2}*(\frac{3}{2}) + 1 = \frac{7}{4}
+\end{equation*}
+\begin{equation*}
+	x_3 = \frac{1}{2}*(\frac{7}{4}) + 1 = \frac{15}{8}
+\end{equation*}
 
 Output:
-\begin{verbatim}
-Your output here!
-\end{verbatim}
+\lstinputlisting{buildseq}
+
+
+
+
+
 
 \begin{exercise}{DM 4}
 Write a function \texttt{HW2bisect} that does the following:
@@ -155,12 +161,11 @@ Write a function \texttt{HW2bisect} that does the following:
 	\begin{itemize}
 		\item \texttt{f}, the name of a function
 		\item Numbers \texttt{a} and \texttt{b} that (supposedly) bound an interval containing a root of \texttt{f}.
-		\item \texttt{delta}, a number determining the accuracy of the sollution.
+		\item \texttt{delta}, a number determining the accuracy of the solution.
 	\end{itemize}
 \end{enumerate}
 Your function should approximate a root of $f$ in the interval $[a,b]$ by 
 bisection.  The approximation $x$ should be within $\delta$ of a root
-
 The function should return:
 \begin{enumerate}
 	\item \texttt{x}, the approximate root
@@ -178,16 +183,67 @@ The function should return:
 
 Your function should have help and should produce error messages appropriately when the function fails.
 
-Test your function works by applying it to the function $f(x)=x^2-4$ with starting interval $[0,5]$.
+Test your function works by applying it to the function $f(x)=x^2-4$ with starting interval $[0,5]$.\\
+
+Code:
+\lstinputlisting{HW2Bisect.m}
+
+Output:
+\lstinputlisting{HW2Bisect}
+
 \end{exercise}
 
-\begin{exercise}{Chapter 4: 2(a)} 
-[You should use the code developed in the previous problem.]
+
+
+
+
+
+
+
+\begin{exercise}{Chapter 4: 2(a)} How many steps would be required to reduce the size of this interval to 
+	$10^-12$ \\
+
+	Output:
+	\lstinputlisting{HWBisect.2}
+
+\vspace{1in}
+We know that gaining a digit of accuracy means decreasing the error (delta) by a factor of 10. 
+Recall the convergence rate for the bisection algorithm is $\frac{1}{2}^n$ where $n$ is the number of iterations through
+the algorithm. Thus we must solve the following equality,
+\begin{align*}
+	\frac{1}{2}^n &= 10^-12\\
+	n &= log_2(10^12)\\
+	&= 39.863\\
+	&\ge 40
+\end{align*}
+Thus at least 40 steps would be required to reduce the error to $10^{-12}$
+
+
+
 \end{exercise}
+
+
+
+
+
 
 \begin{exercise}{Chapter 4: 18}
 Produce a set of four plots of the first four Taylor polynomials of
-the function $f(x)=e^{1-x^2}$, expanded around the point $x=1$.
+the function $f(x)=e^{1-x^2}$, expanded around the point $x=1$.\\
+
+Code:
+\lstinputlisting{plotTaylor.m}
+
+
+
+\includegraphics[width = \textwidth, Title = "Please Zoom"]{plotTaylor.png}
+
+
+
+
+
+
+
 \end{exercise}
 
 \end{document}
