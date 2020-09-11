@@ -220,15 +220,15 @@ An individual is presented with three different glasses of cola, labeled $C$, $D
  CPD & PDC & DPC
  \end{tabular}
 \end{center}
- Since its equally likely that the individual produces any of these rankings each event would have a probability of $\frac{1}{6}$\\
+Since it's equally likely that the individual produces any of these rankings each event would have a probability of $\frac{1}{6}$.
 
 \item What is the probability that $C$ is ranked first?\\
 \\
- \textbf{Answer:} the probability that $C$ is ranked first is $\frac{1}{3}$
+ \textbf{Answer:} The probability that $C$ is ranked first is $\frac{1}{3}$.
  \\
 \item What is the probability that $C$ is ranked first and $D$ is ranked last?\\
 \\
- \textbf{Answer:} the probability that $C$ is ranked first and $D$ is ranked last is $\frac{1}{6}$.
+ \textbf{Answer:} The probability that $C$ is ranked first and $D$ is ranked last is $\frac{1}{6}$.
  \\
 \end{enumerate}
 \vspace{1in}
@@ -265,23 +265,31 @@ A switchboard display in the store allows a customer to hook together any select
 \begin{enumerate}
 \item In how many ways can one component of each type be selected?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Using the multiplication rule we know that there are, 
+ \begin{equation*}
+   5*4*3*4 = 240.
+ \end{equation*}
+ So there are 240 different ways to select one component of each type.
  \\
 \item In how many ways can components be selected if both the receiver and the compact disc player are to be Sony?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Using the multiplication rule again we can see that there are $3*4 = 12$ ways to select the rest of the components.
  \\
 \item In how many ways can components be selected if none is to be Sony?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Using the multiplication rule we see that there are $3*3*3*4 = 144$ ways to select the 4 audio components when none of them are Sony.
  \\
 \item In how many ways can a selection be made if at least one Sony component is to be included?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Using Inclusion-exclusion we know that we can subtract the number of selections with no Sony components from the total number of selections to get the number of selections with atleast one Sony component.
+ \begin{equation*}
+  240 - 144 = 96.
+\end{equation*}
+Thus there are $96$ ways to select audio components where atleast one of the 4 is made by Sony.
  \\
 \item If someone flips switches on the selection in a completely random fashion, what is the probability that the system selected contains at least one Sony component? Exactly one Sony component?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:}The probablilty that the selection contains at least one Sony product is $\frac{96}{240}$. The total number of selections with exactly one sony product is $3*3*4+4*3*4 = 84$ and thus the probability is $\frac{84}{240}$
  \\
 \end{enumerate}
 \vspace{1in}
@@ -293,11 +301,11 @@ A sonnet is a $14$-line poem in which certain rhyming patterns are followed. The
 \begin{enumerate}
 \item How many sonnets can be created from the $10$ in the book?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} For each of the 14 lines in the sonnet we know that there are 10 lines to choose from. Using the multiplication rule we get that $10^{14}$ sonnets can be created. 
  \\
 \item If one of the sonnets counted in part $(a)$ is selected at random, what is the probability that none of its lines came from either the first or the last sonnet in the book?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} The probablity that a selected sonnet has none of it's lines from the first or last sonnet is $\frac{8^{14}}{10^{14}} = .044$.
  \\
 \end{enumerate}
 \vspace{1in}
@@ -309,11 +317,11 @@ Three molecules of type $A$, three of type $B$, three of type $C$, and three of 
 \begin{enumerate}
 \item How many such chain molecules are there? [Hint: If the three $A$’s were distinguishable from one another-- $A_1$, $A_2$, $A_3$ -- and the $B$’s, $C$’s, and $D$’s were also, how many molecules would there be? How is this number reduced when the subscripts are removed from the $A$’s?]\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} For the case where each molecule is unique we can simply permute them to find the total number of chain molecules possible, so $12! = 479,001,600$. In the case the subscript is removed we would use a chain combination statement, so $ {12 \choose 3 3 3 3}  = 369,600$
  \\
 \item Suppose a chain molecule of the type described is randomly selected. What is the probability that all three molecules of each type end up next to one another (such as in $BBBAAADDDCCC$)?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} We can count the total number of chain molecules where each type is next to each other with $4! = 24$ since all we are really doing is deciding the order of molecule type. Thus the probability that a chain molecule has each type grouped together is $\frac{24}{369,600} = 6.494 *10^{-5}$
  \\
 \end{enumerate}
 \vspace{1in}
@@ -323,7 +331,31 @@ Three molecules of type $A$, three of type $B$, three of type $C$, and three of 
 \\
 A system consists of two identical pumps, $\#1$ and $\#2$. If one pump fails, the system will still operate. However, because of the added strain, the remaining pump is now more likely to fail than was originally the case. That is, $r = P(\#2 \text{ fails} | \#1 \text{ fails})>P(\#2 \text{ fails}) = q$. If at least one pump fails by the end of the pump design life in $7\%$ of all systems and both pumps fail during that period in only $1\%$, what is the probability that pump $\#1$ will fail during the pump design life?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Suppose that $A$ is the event that pump $\#1$ fails and $B$ is the even that pump $\#2$ fails. We are given that $P(A \cup B) = .07$, $P(A \cap B) = .01$, and $P(B|A) > P(B)$. Since the pumps are identical we know that $P(A) = P(B)$ and since the system will still operate if one pump fails,  $P(B|A) = P(A|B)$ . Let $r = P(B|A) = P(A|B)$ and $q = P(B) = P(A)$. Recall the multiplication rule, 
+ \begin{equation*}
+   P(A \cap B) = P(A|B)P(B).
+ \end{equation*}
+By substitution we get that,
+\begin{equation*}
+  .01 = rq.
+\end{equation*}
+Through set theory we know that,
+\begin{equation*}
+  P(A \cup B) = P(A \cap B) + P(B\setminus A) + P(A \setminus B).
+\end{equation*}
+Recall that,
+\begin{equation*}
+  P(B\setminus A) = P(B\cap \overline{A}) = P(\overline{A}|B)P(B) = (1-r)q.
+\end{equation*}
+Through substitution we know that,
+\begin{align*}
+  .07 &= rq + (1-r)q + (1-r)q, \\
+    &= rq + 2(1-r)q.
+\end{align*}
+Solving this system of equations we get that $r = .25$ and $q = .04$. Thus the probability that pump $\#1$ will fail is $P(A) = .04$.
+
+
+
 \vspace{1in}
 
 
@@ -333,11 +365,26 @@ Seventy percent of the light aircraft that disappear while in flight in a certai
 \begin{enumerate}
 \item If it has an emergency locator, what is the probability that it will not be discovered?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} Let $A$ be the event in which an aircraft is discovered. Let $B$ be the event in which an aircraft has an emergency locator. We are 
+ given that $P(A) = .70$, $P(B|A) = .60$ and $P(\overline{B}|\overline{A}) = .90$. The probability that an aircraft is not discovered given it has an emergency locator is $P(\overline{A}|B)$. Applying Bayes' Theorem we get,
+ \begin{align*}
+  P(\overline{A}|B) &= \frac{P(B|\overline{A})P(\overline{A})}{P(B|\overline{A})P(\overline{A})*P(B|A)P(A)},\\
+ &= \frac{(1 - .90)(1 - .70)}{(1 - .90)(1 - .70)+(.60)(.70)},\\
+ &= \frac{(.10)(.30)}{(.10)(.30)+(.60)(.70)},\\
+ &= \frac{.03}{.54},\\
+ &= .067.
+ \end{align*}
  \\
 \item If it does not have an emergency locator, what is the probability that it will be discovered?\\
 \\
- \textbf{Answer:}
+ \textbf{Answer:} The probability that an aircraft is discovered given that it does not have an emergency locator is $P(A|\overline{B})$. Using Bayes' Theorem again, we know that,
+ \begin{align*}
+   P(A|\overline{B}) &= \frac{P(\overline{B}|A)P(A)}{P(\overline{B}|A)P(A)+P(\overline{B}|\overline{A})P(\overline{A})},\\
+   &= \frac{(1 - .60)(.7)}{(1 - .60)(.7)+(.90)(1-.70)},\\
+   &= \frac{(.40)(.7)}{(.40)(.7)+(.90)(.30)},\\
+   &= \frac{.28}{.55},\\
+   &= .509.\\
+ \end{align*}
  \\
 \end{enumerate}
 \vspace{1in}
