@@ -84,7 +84,22 @@
 showing that the assumption $\alpha^2>2$ contradicts the
 assumption that $\alpha=\sup A$.
 \end{exercise}
-\begin{proof}
+\begin{proof} Consider the set,
+  \begin{equation*}
+    A = \{a \in \Reals : a^2<2\}.
+  \end{equation*}
+Let $\alpha = \sup A$. Suppose to the contrary that $\alpha^2>2$. Consider an element 
+of $A$ that os larger smaller than $\alpha$,
+\begin{align*}
+  (\alpha - \frac{1}{n})^2 &= \alpha^2 - \frac{2\alpha}{n} + \frac{1}{n^2},\\
+  &> \alpha^2 - \frac{2\alpha}{n},\\
+  &> \alpha^2 - (\alpha^2 - 2),\\
+  &= 2.
+\end{align*}
+Thus we have shown that $ (\alpha - \frac{1}{n})$ is greater than $a$ for all $a \in A$ and therefore $ (\alpha - \frac{1}{n})^2$ is an upper bound.
+Since $(\alpha - \frac{1}{n})<\alpha$ we have contradicted $\alpha = \sup A$.
+
+
 \end{proof}
 
 \begin{exercise}{Supplemental 1} Give a from-scratch

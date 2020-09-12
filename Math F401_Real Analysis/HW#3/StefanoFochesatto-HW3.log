@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 SEP 2020 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 SEP 2020 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,13 +313,13 @@ File: utxsyc.fd 2000/12/15 v3.1
 Here is how much of TeX's memory you used:
  2370 strings out of 492616
  30303 string characters out of 6129482
- 95283 words of memory out of 5000000
+ 98283 words of memory out of 5000000
  6264 multiletter control sequences out of 15000+600000
  21426 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,10n,43p,369b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#3/StefanoFochesatto-HW3.pdf" (1 page, 44037 bytes).
+Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#3/StefanoFochesatto-HW3.pdf" (1 page, 46203 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
