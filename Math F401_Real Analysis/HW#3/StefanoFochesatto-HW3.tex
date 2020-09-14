@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
@@ -89,14 +90,14 @@ assumption that $\alpha=\sup A$.
     A = \{a \in \Reals : a^2<2\}.
   \end{equation*}
 Let $\alpha = \sup A$. Suppose to the contrary that $\alpha^2>2$. Consider an element 
-of $A$ that os larger smaller than $\alpha$,
+of $A$ that is smaller than $\alpha$, like $(\alpha - \frac{1}{n})$, where $n > \frac{2\alpha}{\alpha^2 - 2}$.
 \begin{align*}
   (\alpha - \frac{1}{n})^2 &= \alpha^2 - \frac{2\alpha}{n} + \frac{1}{n^2},\\
   &> \alpha^2 - \frac{2\alpha}{n},\\
   &> \alpha^2 - (\alpha^2 - 2),\\
   &= 2.
 \end{align*}
-Thus we have shown that $ (\alpha - \frac{1}{n})$ is greater than $a$ for all $a \in A$ and therefore $ (\alpha - \frac{1}{n})^2$ is an upper bound.
+Thus we have shown that $ (\alpha - \frac{1}{n})$ is greater than $a$ for all $a \in A$ and therefore $ (\alpha - \frac{1}{n})$ is an upper bound.
 Since $(\alpha - \frac{1}{n})<\alpha$ we have contradicted $\alpha = \sup A$.
 
 
@@ -112,11 +113,27 @@ $f$ is surjective.
 \end{enumerate}
 \end{exercise}
 \begin{proof}[Proof (a)]
+Suppose $f:A\to B$, whose inverse is $g:B\to A$, now consider $a_i,a_j \in A$ such that $f(a_i) = f(a_j)$. Using $g$ as 
+an intermediary we get the equality,
+\begin{align*}
+  f(a_i) &= f(a_j),\\
+  g(f(a_i)) &= g(f(a_j)),\\
+  a_i &= a_j.
+\end{align*}
+Thus we have shown $f$ is an injective function.
 \end{proof}
 \begin{proof}[Proof (b)]
+  Suppose $f:A \to B$, whose inverse is $g:B \to A$. Consider some $b \in B$, by definition of $g$ we know that
+  there exists some $a \in A$ such that, $g(b) = a$. Taking the inverse of both sides we get,
+  \begin{align*}
+    f(g(b)) &= f(a)\\
+    b &= f(a).
+  \end{align*}
+  Since $a \in A$ we have shown that for every $b \in B$ there exists some $a \in A$ such that $f(a) = b$ thus $f$ is surjective. 
 \end{proof}
 
 \begin{exercise}{Supplemental 2} Show that the sets $[0,1)$ and $(0,1)$ have the same cardinality.
+
 \end{exercise}
 
 
@@ -130,9 +147,20 @@ there exists $a\in(0,1)$ such that $C\cap [a,1]$ is uncountable.
 true replacing uncountable with infinite.
 \end{enumerate}
 \end{exercise}
-\begin{proof}[Proof (a)]
+\begin{proof}[Proof (a)] Suppose $C \subseteq [0,1]$ is uncountable. Suppose the sake of contradiction that for all $a \in (0,1)$,
+  $C \cap [a,1]$. Let $a = \frac{1}{n}$. Note that $c \cap [\frac{1}{n},1]$ is countable.  By Theorem 1.5.8 we now hat since $c \cap [\frac{1}{n},1]$ the infinite union is also countable. Through set theory
+  \begin{align*}
+    \bigcup_{n - 1}^{\infty} C \cap [\frac{1}{n},1] &= C \cap (\bigcup_{n - 1}^{\infty} [\frac{1}{n},1])\\
+    &=  C \cap (0,1]
+  \end{align*}
+Therefore, $C \cap (0,1] \cup \{0\} = C$ is also countable. 
 \end{proof}
-\begin{proof}[Proof (b)]
+\begin{proof}[Proof (c)] Suppose the countably infinite set $C = \{\frac{1}{n}, n \in \Nats\}$. By Archimedean Principle we know that 
+  for all $a \in (0,1)$ we can find some $\frac{1}{n}<a$, and therefore we force the set $C \cap [a, 1]$ to be finite. 
+
+
+
+
 \end{proof}
 
 \begin{exercise}{Supplemental 3}
@@ -140,9 +168,12 @@ true replacing uncountable with infinite.
 Suppose for each $k\in\Nats$ that $A_k$ is at most countable.
 Use the fact that $\Nats\times\Nats$ is countably infinite to
 show that $\cup_{k=1}^\infty A_k$ is at most countable.  Hint:
-take advantage of surjections.
+take advantage of surjection.
 \end{exercise}
 \begin{proof}
+  Suppose for each $k\in\Nats$ that $A_k$ is at most countable. Recall that since $A_k$ is at most countable and therefore has an imposable total order letting us reference elements by index.  Consider the function $f: \Nats\times\Nats \to \cup_{k=1}^\infty A_k$ defined such that,
+  $f(n,m) = A_n[m]$. let $a \in \cup_{k=1}^\infty A_k$ and by definition we know that $a$ must exist in some set $A_i$, where $i \in \Nats$. Furthermore we can index the set $A_i$ and let the index for $a$ be $j \in \Nats$. Therefore we know that $f(i,j) = A_i[j]$ where $i,j \in \Nats$. Thus $f$ is a bijection, and it follows that since
+   $\Nats\times\Nats$ is countably infinite then $ \cup_{k=1}^\infty A_k$ is at most countable. 
 \end{proof}
 
 \end{document}
