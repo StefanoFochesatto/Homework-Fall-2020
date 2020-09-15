@@ -132,8 +132,31 @@ Thus we have shown $f$ is an injective function.
   Since $a \in A$ we have shown that for every $b \in B$ there exists some $a \in A$ such that $f(a) = b$ thus $f$ is surjective. 
 \end{proof}
 
-\begin{exercise}{Supplemental 2} Show that the sets $[0,1)$ and $(0,1)$ have the same cardinality.
+\begin{exercise}{Supplemental 2} Show that the sets $[0,1)$ and $(0,1)$ have the same cardinality.\\
+  \begin{proof}
+    Suppose the function $f:[0,1) \to (0,1) $ defined by,
+  \[ f(x) = \begin{cases} 
+    1 - \frac{1}{n+1}  & 1 - \frac{1}{n},  n \in \Nats\\
+    x & \text{Otherwise} 
+ \end{cases}
+\]
+Suppose $a,b \in [0,1)$ such that $f(a) = f(b)$. For the case where $f(x) = x$ the function is trivially injective. let $a,b$ be of the form $1 - \frac{1}{n}$ such that,
+$a = 1 - \frac{1}{n}$ and $b = 1 - \frac{1}{m}$, where $n,m \in \Nats$. Now consider $f(a) = f(b)$, by definition,
+\begin{align*}
+  f(a) &= f(b),\\
+  1 - \frac{1}{n+1} &=  1 - \frac{1}{m+1},\\
+  \frac{1}{n+1} &= \frac{1}{m+1},\\
+  n+1 &= m+1,\\
+  n &= m.
+\end{align*} 
+Thus we have shown that $n = m$ and therefore by substitution $a = b$. Thus $f$ is injective.
+\vspace{.25in}
 
+
+
+Note that for the case where $f(x) = x$ the function is trivially surjective. Suppose some $b \in (0,1)$. Let $b$ be of the form $b = 1 - \frac{1}{n+1}$, where $n \in \Nats$. Consider $a = 1 - \frac{1}{n}$ and note that, $f(a) = b$. Observe that $a \in [0,1)$,
+thus $f$ is surjective.
+  \end{proof}
 \end{exercise}
 
 
@@ -147,8 +170,8 @@ there exists $a\in(0,1)$ such that $C\cap [a,1]$ is uncountable.
 true replacing uncountable with infinite.
 \end{enumerate}
 \end{exercise}
-\begin{proof}[Proof (a)] Suppose $C \subseteq [0,1]$ is uncountable. Suppose the sake of contradiction that for all $a \in (0,1)$,
-  $C \cap [a,1]$. Let $a = \frac{1}{n}$. Note that $c \cap [\frac{1}{n},1]$ is countable.  By Theorem 1.5.8 we now hat since $c \cap [\frac{1}{n},1]$ the infinite union is also countable. Through set theory
+\begin{proof}[Proof (a)] Suppose $C \subseteq [0,1]$ is uncountable. Suppose for the sake of contradiction that for all $a \in (0,1)$,
+  $C \cap [a,1]$ is countable. Let $a = \frac{1}{n}$. Note that $C \cap [\frac{1}{n},1]$ is countable.  By Theorem 1.5.8 we know that since $C \cap [\frac{1}{n},1]$ is countable the infinite union is also countable. Through set theory
   \begin{align*}
     \bigcup_{n - 1}^{\infty} C \cap [\frac{1}{n},1] &= C \cap (\bigcup_{n - 1}^{\infty} [\frac{1}{n},1])\\
     &=  C \cap (0,1]
@@ -171,8 +194,8 @@ show that $\cup_{k=1}^\infty A_k$ is at most countable.  Hint:
 take advantage of surjection.
 \end{exercise}
 \begin{proof}
-  Suppose for each $k\in\Nats$ that $A_k$ is at most countable. Recall that since $A_k$ is at most countable and therefore has an imposable total order letting us reference elements by index.  Consider the function $f: \Nats\times\Nats \to \cup_{k=1}^\infty A_k$ defined such that,
-  $f(n,m) = A_n[m]$. let $a \in \cup_{k=1}^\infty A_k$ and by definition we know that $a$ must exist in some set $A_i$, where $i \in \Nats$. Furthermore we can index the set $A_i$ and let the index for $a$ be $j \in \Nats$. Therefore we know that $f(i,j) = A_i[j]$ where $i,j \in \Nats$. Thus $f$ is a bijection, and it follows that since
+  Suppose for each $k\in\Nats$ that $A_k$ is at most countable. Recall that since all $A_k$ are at most countable there must exists a surjection $g_k: \Nats \to A_k$.  Consider the function $f: \Nats\times\Nats \to \cup_{k=1}^\infty A_k$ defined such that,
+  $f(n,m) = g_n(m)$. Let $a \in \cup_{k=1}^\infty A_k$ and by definition we know that $a$ must exist in some set $A_i$, where $i \in \Nats$. Furthermore, since $g_i$, is a surjection we know that there exists some $j \in \Nats$ where $g_i(j) = a$. Therefore we know that $f(i,j) = g_i(j)$ where $i,j \in \Nats\times\Nats$. Thus $f$ is a surjection, and it follows that since
    $\Nats\times\Nats$ is countably infinite then $ \cup_{k=1}^\infty A_k$ is at most countable. 
 \end{proof}
 

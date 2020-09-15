@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  13 SEP 2020 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  14 SEP 2020 18:34
 entering extended mode
 **"c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F401_Real Analysis/HW#3/StefanoFochesatto-HW3.tex"
 ("c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F401_Real Analysis/HW#3/StefanoFochesatto-HW3.tex"
@@ -311,21 +311,26 @@ File: utxmia.fd 2000/12/15 v3.1
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 85.
  ("C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
-) [1{C:/Users/Stefano Fochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+)
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
-] [2] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#3\StefanoFochesatto-HW3.aux") ) 
+ []
+
+[1{C:/Users/Stefano Fochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+] [2] [3] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#3\StefanoFochesatto-HW3.aux") ) 
 Here is how much of TeX's memory you used:
  3017 strings out of 481212
  41045 string characters out of 2899842
- 279728 words of memory out of 3000000
+ 280728 words of memory out of 3000000
  18577 multiletter control sequences out of 15000+200000
  554190 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,45p,462b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,45p,498b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#3\StefanoFochesatto-HW3.pdf" (2 pages, 58267 bytes).
+Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#3\StefanoFochesatto-HW3.pdf" (3 pages, 61478 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
