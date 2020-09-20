@@ -12,6 +12,9 @@
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{enumerate}
+\usepackage{listings}
+\usepackage{verbatim}
+
 
 % Comment the following line to use TeX's default font of Computer Modern.
 \usepackage{times,txfonts}
@@ -226,11 +229,131 @@ Thus we find that the posterior probability is
 
 
 
-\textbf{3.12:} Airlines somiethimes overbook flights. Suppose that for a plane of 50 seats, 55 passengers have a ticket. Definine the random variables $Y$
-as the number  of ticketed passengers who actually show up for the flight. 
-\textbf{Solution:}
-\vspace{1in}
+\textbf{3.12:} Airlines sometimes overbook flights. Suppose that for a plane of 50 seats, 55 passengers have a ticket. Define the random variables $Y$
+as the number of ticketed passengers who actually show up for the flight. The Probability Mass Function (p(x)) is given.
+\begin{enumerate}
+  \item[\textbf{a.}] What is the probability that the flight will accommodate all the ticketed passengers who show up?\\
+  
+  \textbf{Solution:} Since the plane can only accommodate 50 people, all we hve to so is calculate $P(Y \le 50)$,
+  \begin{equation*}
+    P(Y \le 50) = \sum_{i = 45}^{50} p(i) = .83
+  \end{equation*}
+  \vspace{.25in}
 
+  \item[\textbf{b.}] What is the probability that not all ticketed passengers who show up can be accommodated?\\
+  
+  \textbf{Solution:}Again since the plane can only accommodate 50 people we simply calculate $P(Y>50)$,
+  \begin{equation*}
+    P(Y > 50) = 1 - P(Y \le 50) = 1 - .83 = .17.
+  \end{equation*}
+  \vspace{.25in}
+
+  \item[\textbf{c.}] If you are the first person in the standby list what is the probability that you will be able to board the flight? what is the
+  probability in you are the third person on the list.\\
+
+  \textbf{Solution:} Saying first person on standby to get a seat on the plane, is equivalent to at most 49 people showed up to the flight. Thus the probability that the 
+  first standby person get on the plane is $P(Y \le 49)$,
+  \begin{equation*}
+    P(Y \le 49) = \sum_{i = 45}^{49} p(i) = .66.
+  \end{equation*}
+  Likewise for the third person on standby to get on the plane at most 47 people can show up. Thus the probability that third person on standby boards the plane is $P(Y \le 47)$,
+  \begin{equation*}
+    P(Y \le 47) = \sum_{i = 45}^{47} p(i) = .27.
+  \end{equation*}
+\end{enumerate}
+
+
+
+
+
+
+
+
+\textbf{3.14:} A contractor is is required by the county planning department to submit one, two, three, four, and five forms in applying for a building permit.
+Let $Y =$ the number of forms required of the next applicant the probability that $y$ are required is known to be proportional to $y$ - that is $p(y) = ky$ for $y \in [5]$.\\
+\begin{enumerate}
+  \item[\textbf{a.}] What is the value of $k$?\\
+   
+  \textbf{Solution:}Recall that the sum of a probability mass function over the support must sum to 1, and therefore we get,
+  \begin{align*}
+    1 &= \sum_{i = 1}^5 p(i),\\ 
+    1 &= k(1+2+3+4+5),\\ 
+    1&= k15,\\
+    k &= \dfrac{1}{15}. 
+  \end{align*}
+  \vspace{.5in}
+
+
+
+  \item[\textbf{b.}]What is the probability that at most three forms are required?\\
+  
+  \textbf{Solution:} Calculating $P(Y \le 3)$,
+  \begin{equation*}
+    P(Y \le 3) =  \sum_{i = 1}^3 p(i) = .4
+  \end{equation*}
+  \vspace{.5in}
+
+
+  \item[\textbf{c.}] What is the probability that between 2 and 4 forms are required (inclusive)?\\
+   
+  \textbf{Solution:} Calculating $P(2 \le Y \le 4)$,
+  \begin{equation*}
+    P(2\le Y \le 4) =  \sum_{i = 2}^4 p(i) = .6
+  \end{equation*}
+  \vspace{.5in}
+
+
+  \item[\textbf{d.}] Could $p(y) = \dfrac{y^2}{50}$ for  $y \in [5]$ be a pmf for $Y$\\
+   
+  \textbf{Solution:} Recall that by definition the values of a probability mass function must sum to one over the support of the random variable,
+  \begin{equation*}
+    \sum_{i = 1}^5 p(i) = \dfrac{1+4+9+16+25}{50} = 1.
+  \end{equation*}
+  Therefore $p(y)$ is a valid pmf for $Y$. 
+\end{enumerate}
+
+
+
+
+
+\textbf{3.18:} Two fair six-sided dice are tossed independently. Let $M = $ the maximum of the two tosses (so $M(1,5) = 5$).
+
+\begin{enumerate}
+  \item[\textbf{a.}] What is the pms of $M$?\\
+ 
+  \textbf{Solution:} Note that for some value of a six sided dice, $i$ we have one pair where it shows up twice ie. $(i,i)$ and $2*(i-1)$ pairs where its is the largest of the pair ie. $(i,j)$ and $(j,i)$
+  where $j < i$. Thus the proposed pmf for $M$ is,
+  \begin{equation*}
+    m(i) = \dfrac{2(i-1)}{36}
+  \end{equation*}
+  As an exercise we will prove its a valid pmf over the support $[6]$ using $r$,
+  \textbf{Code:}
+  \lstinputlisting{dice1.r}
+  \textbf{Console:}
+  \lstinputlisting{console}
+  Thus $m$ is a valid pmf for $M$
+  \vspace{.5in}
+
+  \item[\textbf{b.}]Determine the cdf for $m$ and graph it.\\
+  
+  \textbf{Solution:}] By definition we know that the cdf for $m$ is simply, 
+  \begin{equation*}
+    m_c(x) = \sum_{i = 1}^x m(i) = \sum_{i = 1}^x \dfrac{2(i-1)}{36}
+  \end{equation*} 
+  Modifying our script from the previous problem we get, 
+  \textbf{Code:}
+  \lstinputlisting{dice.R}
+  \textbf{Plot:}
+  \begin{center}
+    \includegraphics[width = .75\textwidth]{rplot.png}  
+  \end{center}
+  
+
+
+
+
+
+\end{enumerate}
 
 
 
