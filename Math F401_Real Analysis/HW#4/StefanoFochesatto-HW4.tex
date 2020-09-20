@@ -67,7 +67,7 @@
 \let\II\Ints
 \let\CC\Cplx
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ss%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 % The main document start here.
@@ -137,6 +137,17 @@ Clearly $L$ cannot exist in both $(-1,-\frac{1}{2})$ and $(\frac{1}{2}, \frac{3}
 	Thus the sequence $\frac{1}{2^n}$ converges to 0.  
 \end{proof}
 
+
+
+
+
+
+
+
+
+
+
+
 \begin{exercise}{2.2.2}
 From the definition, compute the given limits.
 \begin{enumerate}
@@ -154,11 +165,11 @@ From the definition, compute the given limits.
 	\end{equation*} 
 \end{enumerate}
 \end{exercise}
-\begin{proof}[Part (a)] let $\epsilon > 0$. Note that the inequality,
+\begin{proof}[Part (a)] let $\epsilon > 0$. Note that,
 	\begin{equation*}
 		|\dfrac{2}{5} - \dfrac{2n+1}{5n+4}| = \dfrac{3}{5(5n+4)}.
 	\end{equation*}
-	Through 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{3}{5(5N+4)}<\epsilon$. Then for all $n \geq N$,
+	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{3}{5(5N+4)}<\epsilon$. Then for all $n \geq N$,
 	\begin{align*}
 		|\dfrac{2}{5} - \dfrac{2n+1}{5n+4}| &= \dfrac{3}{5(5n+4)},\\
 		&\le \dfrac{3}{5(5N+4)},\\
@@ -166,14 +177,14 @@ From the definition, compute the given limits.
 	\end{align*}
 	Thus the sequence $\frac{2n+1}{5n+4}$ converges to $\frac{2}{5}$.  
 \end{proof}
-\begin{proof}[Part (b)] let $\epsilon > 0$. Note that the inequality,
+\begin{proof}[Part (b)] let $\epsilon > 0$. Note that,
 	\begin{equation*}
 		|0 - \dfrac{2n^2}{n^3+3}| = \dfrac{2n^2}{n^3+3} \le \dfrac{2n^2}{n^3} = \dfrac{2}{n}.
 	\end{equation*}
-	Through 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{2}{N}<\epsilon$. Then for all $n \geq N$,
+	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{2}{N}<\epsilon$. Then for all $n \geq N$,
 	\begin{align*}
 		|0 - \dfrac{2n^2}{n^3+3}| &= \dfrac{2n^2}{n^3+3},\\
-		&\le dfrac{2}{N},\\
+		&\le \dfrac{2}{N},\\
 		&< \epsilon.
 	\end{align*}
 	Thus the sequence $\dfrac{2n^2}{n^3+3}$ converges to $0$.  
@@ -182,7 +193,7 @@ From the definition, compute the given limits.
 	\begin{equation*}
 		|0 - \dfrac{sin(n^2)}{n^\frac{1}{3}}| = \dfrac{sin(n^2)}{n^\frac{1}{3}} \le \dfrac{1}{n^\frac{1}{3}}. 
 	\end{equation*}
-	Through 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{1}{N^\frac{1}{3}}<\epsilon$. Then for all $n \geq N$,
+	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{1}{N^\frac{1}{3}}<\epsilon$. Then for all $n \geq N$,
 	\begin{align*}
 		|0 - \dfrac{sin(n^2)}{n^\frac{1}{3}}| &= \dfrac{sin(n^2)}{n^\frac{1}{3}},\\
 		&\le \dfrac{1}{N^\frac{1}{3}},\\
@@ -190,6 +201,16 @@ From the definition, compute the given limits.
 	\end{align*}
 	Thus the sequence $\dfrac{sin(n^2)}{n^\frac{1}{3}}$ converges to $0$.  
 \end{proof}
+
+
+
+
+
+
+
+
+
+
 
 \begin{exercise}{2.2.3}
 Describe what needs to be shown to disprove the given statements.
@@ -204,12 +225,12 @@ Describe what needs to be shown to disprove the given statements.
 \begin{exercise}{2.2.6}
 Prove Theorem 2.2.7. To get started, assume $(a_n) \to a$ and also that $(a_n) \to b$ and prove that $a = b$
 \end{exercise}
-\begin{proof} Suppose $(a_n)$ is a convergent series where $(a_n) \to a$ and also that $(a_n) \to b$. by the definition of convergence we know that
-	there exist some $\epsilon > 0$ where for $N_a\in \Nats$ , $n \geq N_a$ then, 
+\begin{proof} Suppose $(a_n)$ is a convergent series where $(a_n) \to a$ and also that $(a_n) \to b$. By the definition of convergence we know that
+	there exist some $\epsilon > 0$ where for $N_a\in \Nats$ , and that for all $n \geq N_a$ then, 
 	\begin{equation*}
 		|a - a_n| < \frac{\epsilon}{2}
 	\end{equation*}
-	Likewise there exists some $N_b\in \Nats$, $n \geq N_b$ such that,
+	Likewise there exists some $N_b\in \Nats$, where for all $n \geq N_b$ such that,
 	\begin{equation*}
 		|b - a_n| < \frac{\epsilon}{2}
 	\end{equation*} 
@@ -243,9 +264,9 @@ Therefore I claim that $\lim_{n\to\infty} [[5/n]] = 0$
 \begin{proof} Let $\epsilon > 0$. Note that as long as we go out more than $5$ elements in the sequence then the convergence condition is satisfied. Let $N = 6$ and note that for all $n\geq N$,
 	\begin{align*}
 		|0 - [[5/n]]| &= [[5/n]],\\
-						 &= [[5/N]],\\
-						 &= 0,\\
-						 &< \epsilon.
+					&= [[5/N]],\\
+					&= 0,\\
+					&< \epsilon.
 	\end{align*} 
 Thus the sequence $[[5/n]]$ converges to 0.
 \end{proof}
@@ -263,16 +284,28 @@ Thus the sequence $[[5/n]]$ converges to 0.
 \begin{enumerate}
 	\item[(a)] 
 	\begin{proof} Suppose that $(a_n)$ is a bounded sequence and $b_n\to 0$. Since $(a_n)$ is bounded, there exists some $M \in \Reals$
-		such that $a_n \le M$ for all $n$. Since $b_n \to 0$ then there exists some $N \in \Nats$ such that for all $n \geq N$, 
+		such that $a_n \le M$ for all $n$. Since $b_n \to 0$ there exists some $N \in \Nats$ such that for all $n \geq N$ where, 
 		\begin{equation*}
 			|0 - b_n| = |b_n| < \epsilon, 
 		\end{equation*} 
-		for all $\epsilon > 0$. Therefore for all $n \geq N$,
+		for all $\epsilon > 0$. Choose an $\epsilon$ such that $\epsilon = \frac{\epsilon}{M}$. Therefore for all $n \geq N$,
+		\begin{align*}
+			|a_nb_n| &= |a_n||b_n|,\\
+			&\le M|b_n|,\\
+			&< M\dfrac{\epsilon}{M},\\ 
+			&= \epsilon.  
+		\end{align*}
+		Note that we have shown that, $|a_nb_n| < \epsilon$ thus $a_nb_n\to 0$.
 
 
 	\end{proof}
 	\item[(c)]
-	\begin{proof}
+	\begin{proof} Suppose a sequence $(a_n)$ and $(b_n)$ such that $a_n\to 0$ and $b_n\to b$. Note that since $b_n$ converges it must be bounded and therefore from the prevous proof we get
+		that,
+		\begin{equation*}
+	\lim a_nb_n = 0 = 0b.
+		\end{equation*}
+		
 	\end{proof}
 \end{enumerate}
 
