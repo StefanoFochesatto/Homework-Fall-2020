@@ -167,12 +167,13 @@ From the definition, compute the given limits.
 \end{exercise}
 \begin{proof}[Part (a)] let $\epsilon > 0$. Note that,
 	\begin{equation*}
-		|\dfrac{2}{5} - \dfrac{2n+1}{5n+4}| = \dfrac{3}{5(5n+4)}.
+		|\dfrac{2}{5} - \dfrac{2n+1}{5n+4}| = \dfrac{3}{5(5n+4)} < \dfrac{3}{5n}.
 	\end{equation*}
-	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{3}{5(5N+4)}<\epsilon$. Then for all $n \geq N$,
+	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{1}{N}<\dfrac{5\epsilon}{3}$. Then for all $n \geq N$,
 	\begin{align*}
 		|\dfrac{2}{5} - \dfrac{2n+1}{5n+4}| &= \dfrac{3}{5(5n+4)},\\
-		&\le \dfrac{3}{5(5N+4)},\\
+		&<\dfrac{3}{5n},\\
+		&<\dfrac{3}{5N},\\
 		&< \epsilon.
 	\end{align*}
 	Thus the sequence $\frac{2n+1}{5n+4}$ converges to $\frac{2}{5}$.  
@@ -193,9 +194,10 @@ From the definition, compute the given limits.
 	\begin{equation*}
 		|0 - \dfrac{sin(n^2)}{n^\frac{1}{3}}| = \dfrac{sin(n^2)}{n^\frac{1}{3}} \le \dfrac{1}{n^\frac{1}{3}}. 
 	\end{equation*}
-	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{1}{N^\frac{1}{3}}<\epsilon$. Then for all $n \geq N$,
+	Through Theorem 1.4.2(ii) we can pick $N \in \Nats$ such that $\dfrac{1}{N}<\epsilon^3$. Then for all $n \geq N$,
 	\begin{align*}
 		|0 - \dfrac{sin(n^2)}{n^\frac{1}{3}}| &= \dfrac{sin(n^2)}{n^\frac{1}{3}},\\
+		&\le \dfrac{1}{n^\frac{1}{3}},\\
 		&\le \dfrac{1}{N^\frac{1}{3}},\\
 		&< \epsilon.
 	\end{align*}
@@ -284,11 +286,11 @@ Thus the sequence $[[5/n]]$ converges to 0.
 \begin{enumerate}
 	\item[(a)] 
 	\begin{proof} Suppose that $(a_n)$ is a bounded sequence and $b_n\to 0$. Since $(a_n)$ is bounded, there exists some $M \in \Reals$
-		such that $a_n \le M$ for all $n$. Since $b_n \to 0$ there exists some $N \in \Nats$ such that for all $n \geq N$ where, 
+		such that $a_n \le M$ for all $n$. Since $b_n \to 0$ we know that for all $\epsilon > 0$ there exists some $N \in \Nats$ such that for all $n \geq N$, 
 		\begin{equation*}
-			|0 - b_n| = |b_n| < \epsilon, 
+			|0 - b_n| = |b_n| < \frac{\epsilon}{M}.
 		\end{equation*} 
-		for all $\epsilon > 0$. Choose an $\epsilon$ such that $\epsilon = \frac{\epsilon}{M}$. Therefore for all $n \geq N$,
+		Through some algebra we can see that, 
 		\begin{align*}
 			|a_nb_n| &= |a_n||b_n|,\\
 			&\le M|b_n|,\\

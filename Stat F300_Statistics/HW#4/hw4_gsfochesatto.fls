@@ -1,12 +1,26 @@
-PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4
+PWD c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.tex
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.log
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.tex
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.log
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
@@ -25,8 +39,6 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\amscls
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
@@ -35,37 +47,17 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\geomet
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\tools\enumerate.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\tools\enumerate.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\tools\verbatim.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\tools\verbatim.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\times.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\times.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\txfonts.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\txfonts.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.aux
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.aux
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.aux
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.aux
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxsy.fd
@@ -82,12 +74,6 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\context\base
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txtt.tfm
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\tcxr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
@@ -125,10 +111,7 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4secant.m
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4secant.m
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4secant.m
-OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.pdf
+OUTPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.pdf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
@@ -136,8 +119,6 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txb.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\tcxr.vf
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtcxr.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txmi.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
@@ -147,34 +128,18 @@ INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txmi.vf
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxr.fd
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxr.fd
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.1
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.1
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.1
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.3
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.3
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.3
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.6
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.6
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\hw4.6
-INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F426_Numerical Analysis\HW#4\StefanoFochesatto-HW4.aux
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txi.vf
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxi.tfm
+INPUT c:\Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Stat F300_Statistics\HW#4\hw4_gsfochesatto.aux
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txex.pfb
+INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txex.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsyb.pfb
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsyb.pfb
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txtt.pfb
-INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txtt.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\Stefano Fochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
