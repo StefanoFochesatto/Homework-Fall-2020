@@ -74,9 +74,9 @@
 % The main document start here.
 
 % The following commands set up the material that appears in the header.
-\doclabel{Stat 300: Homework 2}
-\docauthor{Brons Gerrish}
-\docdate{Due: September 11th, 2020}
+\doclabel{Stat 300: Homework 4}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
 
 \begin{document}
 \begin{enumerate}
@@ -84,7 +84,9 @@
 
 
 \item\hspace{.5in}\textbf{Exercise 3.30:} An individual who has automobile insurance from a certain company is randomly selected. Let $Y$ be the number of moving violations for which the individual was cited during the last $3$ years. The $pmf$ of $Y$ is,
-
+\begin{center}
+  \includegraphics[width = .50\textwidth]{pmf.png}
+\end{center}
 \begin{enumerate}
 \item Compute $E(Y)$.
 \item Suppose an individual with $Y$ violations incurs a
@@ -94,8 +96,15 @@ of the surcharge.
 
 \textbf{Answer:} 
 \begin{enumerate}
-\item $E(Y)=.6(0)+.25(1)+.1(2)+.05(3)=.6$
-\item $100(.6)^2=\$36$
+\item To calculate the expected value we have to sum the support multiplied by the corresponding value of the $pmf$.
+therefore,
+\begin{equation*}
+  E(Y) = \sum_{y = 0}^3 yp(y) = 0(.60) + 1(.25) + 2(.10) + 3(.05) = .60
+\end{equation*}
+\item To calculate the expected value of $h(Y) = 100Y^2$ we use,
+\begin{equation*}
+  E(100Y^2) = \sum_{y = 0}^3 h(y)p(y) = (100) 0^2(.60) + (100) 1^2(.25) + (100) 2^2(.10) + (100) 3^2(.05) = 110
+\end{equation*}
 \end{enumerate}
 
 \vspace{.5in}
@@ -105,10 +114,25 @@ of the surcharge.
 
 
 \item\hspace{.5in}\textbf{Exercise 3.34:} Suppose that the number of plants of a particular type found in a rectangular sampling region (called a quadrat by ecologists) in a certain geographic area is an $rv$ $X$ with $pmf$,
-\item 
-Is E(X) finite? Justify your answer (this is another distribution that statisticians would call heavy-tailed).\\
-
+\begin{center}
+  \includegraphics[width = .50\textwidth]{pmf2.png}
+\end{center}
+\begin{enumerate}
+\item Is E(X) finite? Justify your answer (this is another distribution that statisticians would call heavy-tailed).\\
+\end{enumerate}
 \textbf{Answer:} 
+
+\begin{enumerate}
+  \item Consider the expected value, calcuated with an infinite sum,
+  \begin{equation*}
+    \sum_{i = 1}^{\infty}xp(x) = c\sum_{i = 1}^{\infty}\dfrac{1}{x^2}.
+  \end{equation*}
+  Since the infinte series,
+  \begin{equation*}
+    \sum_{i = 1}^{\infty}\dfrac{1}{x^2},
+  \end{equation*}
+  is convergent we know that the excpected value exists. 
+\end{enumerate}
 \vspace{.5in}
 
 
@@ -128,13 +152,43 @@ Is E(X) finite? Justify your answer (this is another distribution that statistic
 
 \textbf{Answer:} 
 \begin{enumerate}
-\item $P(X\le3)=P(X=3)+P(X=2)+P(X=1)+P(X=0)={25\choose 3}(.05)^3(.95)^{22}+{25\choose 2}(.05)^2(.95)^{23}+{25\choose 1}(.05)(.95)^{24}+{25\choose 0}(.95){25}=0.093+0.231+0.365+0.277=.966$\\
-\\
-$P(X\le 3)=P(X=2)+P(X=1)+P(X=0)=0.231+0.365+0.277=.873$.
-\item $P(X\ge 4)=1-P(X<3)=1-.873=.127$
-\item $P(1\le X\le3)=P(X=1)+P(X=2)+P(X=3)=0.093+0.231+0.365=.689$.
-\item $E(X)=np=25(.05)=1.25$, $\sigma_X=\sqrt{np(1-p)}=\sqrt{25(.05)(.95)}=\sqrt{1.25(.95)}=\sqrt{1.1875}\approx1.0897$
-\item $.95^{50}=.077$.
+\item Consider the following equation,
+\begin{equation*}
+  P(X \le 3) = \sum_{i = 0}^{3}p(i)
+\end{equation*}
+Evaluating the equation with a binomial random variable $X\sim Bin(25, .05)$,
+\begin{align*}
+  P(X \le 3) &=\binom{25}{0}(.05)^0(.95)^25+\binom{25}{1}(.05)^1(.95)^24+\binom{25}{2}(.05)^2(.95)^23+\binom{25}{3}(.05)^3(.95)^22\\
+  &=.966
+\end{align*} 
+Calculating $P(X < 3) = P(X \le 2)$ so,
+\begin{align*}
+  P(X \le 2) &= \binom{25}{0}(.05)^0(.95)^25+\binom{25}{1}(.05)^1(.95)^24+\binom{25}{2}(.05)^2(.95)^23\\
+  &=.873.
+\end{align*}
+
+\item First we will simplify the probability,
+\begin{equation*}
+  P(X \geq 4) = 1 - P(X < 4) = 1 - P(X \le 3).
+\end{equation*}
+using our previuos result we get,
+\begin{equation*}
+  P(X \geq 4) = 1 - .966 = .034
+\end{equation*}
+
+\item Again we simplify the probability statement, 
+\begin{equation*}
+  P(1\le X \le 3) = P(X \le 3) - P(X < 1) = P(X \le 3) - P(X \le 0) 
+\end{equation*}
+Using our previous results,
+\begin{equation*}
+  P(1\le X \le 3) = .966 -  \binom{25}{0}(.05)^0(.95)^25 = .689.
+\end{equation*}
+\item Since $X$ is a binomial random variable we know that $E(X) = 25(.05) = 1.25$ and $\sigma_X = \sqrt{25(.95)(.05)} = 1.0897$
+\item Defining a new random variable $X\sim Bin(50, .05)$ and calculating the probability, 
+\begin{equation*}
+  \binom{50}{0}(.05)^0(.95)^50 = .0769.
+\end{equation*}
 \end{enumerate}
 \vspace{.5in}
 
@@ -154,10 +208,31 @@ $P(X\le 3)=P(X=2)+P(X=1)+P(X=0)=0.231+0.365+0.277=.873$.
 
 \textbf{Answer:} 
 \begin{enumerate}
-\item ${25 \choose 1}(.02)(.98)^{24}=.308$.
-\item $1-P(X<1)=1-{25 \choose 0}(.02)^0(.98)^{25}=1-.603=.397$.
+\item Consider the binomial random variable $X\sim Bin(25, .02)$ since we have a sample of $25$ student and only 2\% of the population is a success. Therefore the probability that only one will revive accomidations,
+\begin{equation*}
+ P(X = 1) = {25 \choose 1}(.02)(.98)^{24}=.308
+\end{equation*}
+
+
+
+
+
+\item The probablity of at least one student reciving special accomidation can be calculated by simply taking the compliment,
+\begin{equation*}
+  1-P(X = 0) = 1-{25 \choose 0}(.02)^0(.98)^{25}=.397
+\end{equation*}
 \addtocounter{enumii}{1}
-\item We would expect $(.02)(25)=.5$ to be accommodated. Two standard deviations is $2\sqrt{(25)(.02)(.98)}=1.4$. Thus we want $P(0\le X\le 1.9)=P(0\le X\le 1)=P(X=0)+P(X=1)=.603+.308=.911$
+
+
+
+\item First we have to calculate the expected value, and standard deviation,
+\begin{equation*}
+  E(X) = 25(.02).5,\sigma_X = \sqrt(25(.02)(.98)) = .7
+\end{equation*}
+Then calculating the probability that the nunber among the 25 who recieve special accomidation is within 2 standard deviations is,
+\begin{equation*}
+  P(.5 - 1.4\le X \le .5 + 1.4) = P(0 \le X \le 1) = {25 \choose 0}(.02)^0(.98)^{25} - {25 \choose 1}(.02)(.98)^{24} = .70443
+\end{equation*}
 \end{enumerate}
 \vspace{.5in}
 
@@ -175,23 +250,29 @@ $P(X\le 3)=P(X=2)+P(X=1)+P(X=0)=0.231+0.365+0.277=.873$.
 \end{enumerate}
 \textbf{Answer:} 
 \begin{enumerate}
-\item For $.01$, $P(X\le 2)=P(X=0)+P(X=1)+P(X=2)={10\choose 0}(.01)^0(.99)^10+{10\choose 1}(.01)^1(.99)^9+{10\choose 2}(.01)^2(.99)^8=.904+.091+.004=.999$.\\
-\\
-For $.05$, $P(X\le 2)=.988$\\
-For $.10$, $P(X\le 2)=.930$\\
-For $.20$, $P(X\le 2)=.678$\\
-For $.25$, $P(X\le 2)=.526$\\
-\item 
+\item Consider random variable $X\sim Binom(10,p)$ and Using Appendix A.1 we will calculate $P(X \le 2)$ for the following value of $p$\\
+
+$ p = .01$, $P(X\le 2)=.999$\\
+$ p = .05$, $P(X\le 2)=.988$\\
+$ p = .10$, $P(X\le 2)=.930$\\
+$ p = .20$, $P(X\le 2)=.678$\\
+$ p = .25$, $P(X\le 2)=.526$\\
+\item Consider the following plot made in $R$,
+\begin{center}
+  \includegraphics[width = \textwidth]{Rplot.png}
+\end{center}
 
 
-\item
-For $.01$, $P(X\le 1)=.996$.\\
-For $.05$, $P(X\le 1)=.914$.\\
-For $.10$, $P(X\le 1)=.736$.\\
-For $.20$, $P(X\le 1)=.376$.\\
-For $.25$, $P(X\le 1)=.244$.\\
-For $.50$, $P(X\le 1)=.011$.\\
-For $.75$, $P(X\le 1)=.00003$.\\
+
+\item Consider random variable $X\sim Binom(10,p)$ and Using Appendix A.1 we will calculate $P(X \le 1)$ for the following value of $p$\\
+
+$ p = .01$, $P(X\le 1)=.996$.\\
+$ p = .05$, $P(X\le 1)=.914$.\\
+$ p = .10$, $P(X\le 1)=.736$.\\
+$ p = .20$, $P(X\le 1)=.376$.\\
+$ p = .25$, $P(X\le 1)=.244$.\\
+$ p = .50$, $P(X\le 1)=.011$.\\
+$ p = .75$, $P(X\le 1)=.00003$.\\
 
 \end{enumerate}
 \vspace{.5in}
@@ -206,7 +287,14 @@ For $.75$, $P(X\le 1)=.00003$.\\
 \item\hspace{.5in}\textbf{Exercise 3.60:} A toll bridge charges $\$1.00$ for passenger cars and $\$2.50$ for other vehicles. Suppose that during daytime hours, $60\%$ of all vehicles are passenger cars. If $25$ vehicles cross the bridge during a particular daytime period, what is the resulting expected toll revenue? [Hint: Let $X= $ the number of passenger cars; then the toll revenue $h(X)$ is a linear function of $X$.]\\
 \\
 \textbf{Answer:} \\
-$25(.6)(1)+25(.4)(2.5)=\$40$. The first product is the revenue off passenger cars and the second product is for other vehicles. These revenues are found by multiplying the expected value by the charge.
+Consider that the expected value for the random variable, $X \sim (25, .6)$ where the linear funciton that estimates toll revinue is ,
+\begin{equation*}
+  h(X) = (1)X+(2.5)(25 - X)
+\end{equation*}
+Therefore using the fact that the expected value is $E(X) = 25(.6)$ we get the expected toll revenue is,
+\begin{equation*}
+  E((1)X+(2.5)(25 - X)) = E(X)+(2.5)E(25 - X) = 15 + 2.5(10) = 40 
+\end{equation*}
 \vspace{.5in}
 
 \item\hspace{.5in}\textbf{Supplemental 1:} Suppose that we get $100$ pairs of patients and want to compare two treatments (this is called a matched pairs design).\\
@@ -216,7 +304,17 @@ We will apply one treatment to one patient in a pair and the other treatment to 
 If both treatments work equally well, the number of pairs where treatment one is better than treatment two should be $X \sim Binomial(100,0.5)$, because in this case it’s essentially a coin flip. What is the expected value and standard deviation of $X$? What range of values is within $2$ standard deviations of the mean?\\
 \\
 \textbf{Answer:} 
-$E(X)=np=100(.5)=50$\\
+It is known that the mean and standard deviation of a binomialy distributed  random variable are,
+\begin{equation*}
+  E(X) = np = 100(.5) = 50
+\end{equation*}
+\begin{equation*}
+  \sigma_X = \sqrt{np(1-p)} = 5
+\end{equation*}
+Calculating the probability within 2 standard deviations from the expected value (r assisted),
+\begin{equation*}
+  P(40\le X \le 60) = P(X \le 60) - P(X \le 39) = .9647
+\end{equation*}
 \vspace{.5in}
 
 \item\hspace{.5in}\textbf{Exercise 3.62:}
@@ -226,8 +324,19 @@ $E(X)=np=100(.5)=50$\\
 \end{enumerate}
 \textbf{Answer:} 
 \begin{enumerate}
-\item
-\item
+\item For binomial distributions it is know that we can calculate the variance with the formula,
+\begin{equation*}
+  V(X) = np(1 - p)
+\end{equation*}
+Solving this equation for roots where $n$ is a non zero constant and $0 \le p \le 1$ we know that those value of $p$ are the edge cases $p = 1$ and $p = 0$. This makes seance in application since 
+it means that an event is certain to happen or impossible to happen and therefore there should be no varice in our probabilities.\\
+
+
+\item Like the hint suggests we can take the derivative of the previous equation,
+\begin{equation*}
+  V'(X) = n - 2np = n(1-2p),
+\end{equation*}
+and clearly we have a root at $p = \frac{1}{2}$ coressponding with the maxima of $V(X)$
 \end{enumerate}
 \vspace{.5in}
 
