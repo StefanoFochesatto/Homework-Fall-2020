@@ -285,25 +285,76 @@ such that if $n\ge N$, then $a_n\neq 0$.
 \begin{exercise}{Supplemental 3}
 Show that if $|b_n|\to 0$, then $b_n\to 0$.
 Then show that this statement is false if we replace $0$
-with any other real number.
+with any other real number.\\
+
+\begin{proof}
+  Suppose the sequence $|b_n|\to 0$. Since $|b_n|$ converges we know that for all $\epsilon > 0$ there exists an $n \in \Nats$
+  where for all $n \geq N$,
+  \begin{equation*}
+    ||b_n| - 0| \le \epsilon.
+  \end{equation*}
+  Rewriting the expression,
+  \begin{equation*}
+    ||b_n| - 0| = ||b_n|| = |b_n| = |b_n - 0|.
+  \end{equation*}
+  Therefore the following inequality still holds,
+  \begin{equation*}
+    |b_n - 0| \le \epsilon.
+  \end{equation*}
+Thus we have shown that, $b_n\to 0$.\\
+
+Suppose we where to replace $0$ with a $1$ and consider the sequence,
+\begin{equation*}
+  b_n = (-1)^n.
+\end{equation*}
+Clearly $|b_n|\to 1$ however $b_n\to -1$ thus the statement does not hold.
+\end{proof}
 \end{exercise}
-
-\begin{exercise}{2.3.10 (c)}
-\end{exercise}
+\vspace{.5in}
 
 
 
 
 
 
-\begin{exercise}
+\begin{exercise}{Supplemental 4}
+  
 Consider the series $\sum_{n=1}^\infty 1/n^2$. 
 Give a careful proof by induction that the partial sums
 \[
 s_k = \sum_{n=1}^k 1/n^2
 \]
-satisfy $s_k < 2 - 1/k$.
+satisfy $s_k \le 2 - 1/k$.\\
+
+\begin{proof}
+  Consider the case where $k = 1$, 
+  \begin{equation*}
+    s_1 =\dfrac{1}{1^2} = 1.
+  \end{equation*} 
+  Clearly,
+  \begin{equation*}
+    s_1 = 1 \le 2- \dfrac{1}{1} = 1.
+  \end{equation*}
+We will now proceed by induction on $k$. Suppose there exists some $k \in \Nats$ such that,
+\begin{equation*}
+  s_k \le 2 - 1/k
+\end{equation*}
+Note that by the definition of $s_k$ we know that,
+\begin{equation*}
+  s_{k+1} = s_k + \dfrac{1}{(k+1)^2}.
+\end{equation*}
+From our induction hypothesis and using the same algebraic argument as example 2.4.4. we get that,
+\begin{align*}
+  s_{k+1} &= s_k + \dfrac{1}{(k+1)^2}\\
+  &\le 2 - \dfrac{1}{k} + \dfrac{1}{(k+1)^2},\\
+  &< 2 - \dfrac{1}{k} + \dfrac{1}{(k)(k+1)},\\
+  &=  2 - \dfrac{1}{k} + (\dfrac{1}{(k)} - \dfrac{1}{(k+1)}),\\
+  &=  2 - \dfrac{1}{(k+1)}.
+\end{align*}
+Thus we have proven through induction that the partial sums $s_k$ satisfy $s_k \le 2 - 1/k$.
+\end{proof}
 \end{exercise}
+\vspace{.5in}
 
 
 
@@ -311,8 +362,59 @@ satisfy $s_k < 2 - 1/k$.
 
 
 
+\begin{exercise}{2.4.3(a)} Show that the following sequence converges and find the limit,
+  \begin{equation*}
+    \sqrt{2}, \sqrt{2+\sqrt{2}}, \sqrt{2+ \sqrt{2+\sqrt{2}}} ,\dots
+  \end{equation*}
+  
+  \begin{proof}
+    First we will prove that the sequence is bounded above by $2$ using induction. Note that the sequence $a_n$ written in the form of a recurrence relation,
+    \begin{equation}
+      a_{n+1} = \sqrt{2+ a_n}
+    \end{equation}
+    Note that when $n = 1$ we see that,
+    \begin{equation}
+      a_1 = \sqrt{2} < 2.
+    \end{equation}
+    now suppose that for some $n \in \Nats$ the following is true,
+    \begin{equation*}
+      a_n \le 2.
+    \end{equation*}
+    Consider the term $a_{n+1}$ by the definition,
+    \begin{align*}
+      a_{n+1} &= \sqrt{2 + a_n},\\
+      &\le \sqrt{2+2},\\
+      &\le 2.      
+    \end{align*}
+    Therefore by induction for all $n \in \Nats$ we have shown that $a_n \le 2$ and thus the sequence $a_n$ is bounded above by 2.\\
 
-\begin{exercise}{2.4.3(a)} Hint: Use the Monotone Convergence Theorem!
+    Now we will prove that the sequence is monotone increasing through induction. First note that,
+    \begin{equation*}
+      a_2 = \sqrt{2+ \sqrt{2}} \geq \sqrt{2} = a_1
+    \end{equation*}
+    Now suppose that for some $n \in \Nats$,
+    \begin{equation*}
+      a_n \geq a_{n-1}.
+    \end{equation*}
+    Consider the term $a_{n+1}$ by the definition,
+    \begin{equation*}
+      a_{n+1} = \sqrt{2+ a_n} \geq \sqrt{2+ a_{n-1}} = a_n.
+    \end{equation*}
+    Thus we have shown that for all $n \in \Nats$ that $a_n \geq a_{n-1}$.\\
+
+    By the Monotone convergence theorem we can be certain that the series converges. To find where it converges consider the fizxed point equation,
+    \begin{equation*}
+      \phi(x) = \sqrt{2 + x}.
+    \end{equation*}
+    Finding the fixed points for $\phi$,
+    \begin{align*}
+      x &= \sqrt{2+ x},\\
+      x^2 &= 2 + x,\\
+      x^2 - x - 2  &= 0,\\
+      (x-2)(x+1) &= 0.
+    \end{align*}
+Since the sequence only produces positive real numbers we know that the series must converge to a value of 2.
+  \end{proof}
 \end{exercise}
 
 
