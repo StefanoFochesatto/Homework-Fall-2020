@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 SEP 2020 08:21
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  29 SEP 2020 16:23
+>>>>>>> e741fd19a18232c84a3dc80f27bdac1a1aa577b3
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,6 +349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
  []
 
 [3]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
@@ -388,6 +393,33 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 [4] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#5/StefanoFochesatto-HW5.aux) ) 
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 286--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
+[6] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#5\StefanoFochesatto-HW5.aux") ) 
+>>>>>>> e741fd19a18232c84a3dc80f27bdac1a1aa577b3
 Here is how much of TeX's memory you used:
  2372 strings out of 492616
  30316 string characters out of 6129482
@@ -395,12 +427,20 @@ Here is how much of TeX's memory you used:
  6264 multiletter control sequences out of 15000+600000
  22802 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  27i,11n,43p,369b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/HW#5/StefanoFochesatto-HW5.pdf" (4 pages, 56153 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
+=======
+ 36i,12n,45p,376b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\HW#5\StefanoFochesatto-HW5.pdf" (6 pages, 67509 bytes).
+PDF statistics:
+ 62 PDF objects out of 1000 (max. 8388607)
+>>>>>>> e741fd19a18232c84a3dc80f27bdac1a1aa577b3
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
