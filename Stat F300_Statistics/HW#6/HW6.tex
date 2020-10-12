@@ -74,9 +74,9 @@
 % The main document start here.
 
 % The following commands set up the material that appears in the header.
-\doclabel{Stat 300: Homework 2}
+\doclabel{Stat 300: Homework 6}
 \docauthor{Stefano Fochesatto}
-\docdate{Due: September 11th, 2020}
+\docdate{\today}
 
 \begin{document}
 \begin{enumerate}
@@ -177,8 +177,26 @@ Therefore the top $5\%$ of all concentrations occur when $X\geq .3987$.
 \end{enumerate}
 \textbf{Answer:} 
 \begin{enumerate}
-\item
-\item
+\item We will Continue by using a standard normal distribution to approximate the Binomial r.v., $X \sim Binom(1000, .97)$ where $X$ is the number of people who can't taste the difference between oils. 
+Checking if $X$ satisfies approximation criteria,
+\begin{equation*}
+  \mu = 1000(.97) = 970 \geq 10, 
+\end{equation*}
+\begin{equation*}
+  nq = 1000(.03) = 30 \geq 10 .
+\end{equation*}
+Calculating $\sigma$ for our approximate normal,
+\begin{equation*}
+  \sigma = \sqrt{1000(.97)(.03)} = 5.39.
+\end{equation*}
+Since at most 40 people tasting the difference is the same as at least 960 people not tasting the difference we know that $P(X\geq 40) = P(X \le 960)$,
+\begin{equation*}
+  P(X \le 960) \approx P(Z \le \frac{960 + .5 - 970}{5.39}) = \phi(-1.76) = .039.
+\end{equation*}
+\item Similarly we approximate. Note that $5\%$ of 1000 is 50 and saying at most 50 people can detect the difference is the sme as saying at least 950 cannot detect the difference. Hence,
+\begin{equation*}
+  P(X \geq 950) = 1 - P(X < 950) \approx 1 - P(Z < \dfrac{950 + .5 - 970}{5.39}) = 1 - \phi(-3.617) = .9998.
+\end{equation*}
 \end{enumerate}
 \vspace{.5in}
 
@@ -187,7 +205,19 @@ Therefore the top $5\%$ of all concentrations occur when $X\geq .3987$.
 
 \item\hspace{.5in}\textbf{Exercise 4.38:} There are two machines available for cutting corks intended for use in wine bottles. The first produces corks with diameters that are normally distributed with mean 3 cm and standard deviation $.1$ cm. The second machine produces corks with diameters that have a normal distribution with mean $3.04$ cm and standard deviation $.02$ cm. Acceptable corks have diameters between $2.9$ cm and $3.1$ cm. Which machine is more likely to produce an acceptable cork?\\
 \\
-\textbf{Answer:} 
+\textbf{Answer:} Consider the r.v. $X_1 \sim norm(3, .1)$ and  $X_2 \sim norm(3.04, .02)$ where $X_i$ is the diameter of the cork produced by the $ith$ machine. We will proceed by 
+using the standard normal to calculate $P(2.9 \le X_i \le 3.1)$. Consider the first machine,
+\begin{equation*}
+  P(2.9 \le X_1 \le 3.1) = P(\frac{2.9 - 3}{.1} \le Z \le \frac{3.1 - 3}{.1}) = P(-1 \le Z \le 1) = \phi(1) - \phi(-1) = .6826.
+\end{equation*} 
+Similarly we calculate the probability for the second machine,
+\begin{equation*}
+  P(2.9 \le X_2 \le 3.1) = P(\frac{2.9 - 3.04}{.02} \le Z \le \frac{3.1 - 3.04}{.02}) = P(-7 \le Z \le 3) = \phi(3) - \phi(-7) = .9987. 
+\end{equation*}
+Since machine 2 has a higher probability it is more likely to produce cork within the given range.
+
+
+
 \vspace{.5in}
 
 
@@ -195,7 +225,11 @@ Therefore the top $5\%$ of all concentrations occur when $X\geq .3987$.
 
 \item\hspace{.5in}\textbf{Exercise 4.42:} The temperature reading from a thermocouple placed in a constant-temperature medium is normally distributed with mean $\mu$, the actual temperature of the medium, and standard deviation $\sigma$. What would the value of $\sigma$ have to be to ensure that $95\%$ of all readings are within $.18$ of $\mu$?\\
 \\
-\textbf{Answer:} 
+\textbf{Answer:} Recall that by the empirical rule $95\%$ of a normal distribution must lie within 2 standard deviations of the mean. Hence,
+\begin{align*}
+  \mu + 2\sigma &= \mu + .18\\
+  \sigma &= .09.
+\end{align*} 
 \vspace{.5in}
 
 
@@ -207,11 +241,48 @@ Therefore the top $5\%$ of all concentrations occur when $X\geq .3987$.
 \item What is the probability that distance exceeds the mean distance by more than $2$ standard deviations?
 \item What is the value of the median distance?
 \end{enumerate}
-\textbf{Answer:} 
+\textbf{Answer:} First note that the pdf and cdf for an exponential distribution with $\lambda =  .01386$ are,
+
+\[ f(x) =  \begin{cases} 
+    (\lambda)e^{-\lambda(x)} & x \geq 0 \\
+    0 & otherwise 
+ \end{cases}
+\]
+
+\[ F(x) =\begin{cases} 
+    1-e^{-\lambda(x)} & x \geq 0 \\
+    0 & otherwise 
+ \end{cases}
+\]
+
 \begin{enumerate}
-\item
-\item
-\item
+\item Calculating the three probabilities using the given cdf,
+\begin{equation*}
+  P(X \le 100) = F(100) =  1-e^{-\lambda(100)} = .7499.
+\end{equation*}
+\begin{equation*}
+  P(X \le 200) = F(200) =  1-e^{-\lambda(200)} = .9377.
+\end{equation*}
+\begin{equation*}
+  P(100 \le X \le 200) = F(200) - F(100) = .9377 - .7499 = .1878.
+\end{equation*}
+
+\item Recall that for an exponential distribution the mean and standard deviation are the same and are calculated,
+\begin{equation*}
+  \mu = \sigma  = \frac{1}{\lambda}.
+\end{equation*}
+Therefore calculating the probability which the distance exceeds the mean by more 2 standard deviations,
+\begin{equation*}
+  P(X > \mu + 2\sigma) = P(X > 216.54) =1 - P(X \le 216.54)   = 1 - F(216.45) = 1 - (1-e^{-\lambda(216.45)}) = .0498.
+\end{equation*}
+\item Recall that the median is located at the point where the cdf is equal to .5. Thus,
+\begin{align*}
+  F(\widetilde{x}) &= .5\\
+  1-e^{-\lambda(\widetilde{x})}&= .5\\
+  e^{-\lambda(\widetilde{x})}&= .5\\
+  \widetilde{x}&= \frac{ln(.5)}{-\lambda}\\
+  \widetilde{x}&= 50.
+\end{align*}
 \end{enumerate}
 \vspace{.5in}
 
