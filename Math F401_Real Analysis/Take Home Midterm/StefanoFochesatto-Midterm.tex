@@ -1,0 +1,304 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\doclabel{Math 401: Take Home Midterm}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
+
+\begin{document}
+
+\begin{exercise}{1}Let $A$ and $B$ be non empty sets that are bounded above.Suppose $\sup A < \sup B$. Prove that there is an element in $B$ that is an
+	upper bound for $A$.\\
+
+	\begin{proof}
+		Suppose that $A$ and $B$ be non empty sets that are bounded above and that $\sup A < \sup B$. Let $x = \sup A$ and $y = \sup B$. Now consider some $z$
+		such that, $0 < z < y-x$. Through some algebra we can see that, $x < y - z$  and therefore the term $y - z$ must be an upper bound for $A$ since it is larger than its least upper bound. Also 
+		note that $y - z < y$ and therefore $y-z$ must be contained in $B$.
+	\end{proof}
+
+\end{exercise}
+
+
+\begin{exercise}{2} In class we proved that $\Nats^2$ is countably infinite. Use this fact and a proof by induction to show that $\Nats^n$ is countably infinite for every $n \in \Nats$. \\
+
+  \begin{proof}
+    Consider the base case where $n = 1$, clearly $\Nats^1$ is countably infinite and we have proven that $\Nats^2$ is countably infinite. We will proceed by induction on $n$. 
+    Suppose there exists some $n\in \Nats$ such that $\Nats^n$ is countably infinite. By the induction hypothesis there exists some bijection 
+     $g: \Nats^n \to \Nats$. Now consider the bijection we proved in class $f: \Nats^2 \to \Nats$. Note that the composition of these two functions gives us, 
+     $f\circ g: \Nats^{n+1} \to \Nats $ and since $f\circ g$ is a composition of bijections it must also be a bijection. Thus by induction we have shown that for all $n\in \Nats$
+     $\Nats^n$ is countably infinite.     
+  \end{proof}
+  
+\end{exercise}
+\vspace{.5in}
+
+
+
+\begin{exercise} {3} Compute,
+  \begin{equation*}
+    \lim_{n \to \infty}\dfrac{3^n}{n!}.
+  \end{equation*}
+  A fully rigorous proof will involve a proof by induction. \\
+
+\begin{proof}
+  
+\end{proof}
+
+\end{exercise}
+\vspace{.5in}
+
+
+
+\begin{exercise} {4} Let $(x_n)$ and $(y_n)$ be given, and define $(z_n)$ to be the "shuffled"
+  sequence $(x_1,y_1,x_2,y_2,\dots,x_n,y_n,\dots)$. Prove that $(z_n)$ is convergent if and only if 
+  $(x_n)$ and $(y_n)$ are both convergent with $\lim x_n = \lim y_n$.\\
+
+\begin{proof}
+  Suppose convergent sequences $(x_n)$ and $(y_n)$ such that $\lim x_n = \lim y_n = l$. consider a sequence $(z_n)$ such that
+  $(x_1,y_1,x_2,y_2,\dots,x_n,y_n,\dots)$. Note that $(z_{2n}) = (y_n)$ and $(z_{2n-1}) = (x_n)$. Let $\epsilon > 0$. Since 
+  $(x_n)$ and $(y_n)$ converge we know that there exists $N_x,N_y \in \Nats$ such that,
+  \begin{equation*}
+    |x_n - l|<\epsilon,
+  \end{equation*}
+  \begin{equation*}
+    |y_n - l|<\epsilon.
+  \end{equation*}
+  Consider an $N \in \Nats$ such that $N = \max(N_x,N_m)$. By substitution we get that for all odd and even values of $(z_n)$ we get,
+  \begin{equation*}
+    |z_n - l| < \epsilon.
+  \end{equation*}
+Thus $(z_n)$ is convergent. 
+\end{proof}
+\vspace{.25 in}
+
+\begin{proof}
+  Suppose a sequence $(z_n) =(x_1,y_1,x_2,y_2,\dots,x_n,y_n,\dots)$ is convergent to some limit $(z_n) \to l$. By Theorem 2.5.2
+  we know that all subsequences of $(z_n)$ must converge to the same limit. Consider some $a \in x_n$ such that $x_i = a$. Note that $x_i = z_{2i-1}$
+  and therefore $a \in z_n$. Similarly for some $b \in y_n$ such that $y_i = b$ we know that $y_i = z_{2i}$ and therefore $b \in z_n$. Thus both $x_n$ and $y_n$
+  are subsequences of $z_n$ and therefore $\lim z_n = \lim x_n = \lim y_n$.
+\end{proof}
+
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+\begin{exercise}{5} Suppose $F$ is a collection of open intervals such that if $I,J \in F$ and $I \neq J$, then $I \cap J = \emptyset$. Prove that $F$ is countable.\\
+
+  \begin{proof}
+    Suppose $F$ is a collection of open intervals such that each interval is disjoint. Note since all 
+    intervals are disjoint it must follow that the pair of $\sup J$ and $\inf J$ is unique for all $J \in F$. Consider the sequence of ordered pairs,
+    \begin{equation*}
+      a_n = (\inf(J_1),\sup(J_1)),\dots,(\inf(J_n),\sup(J_n)).
+    \end{equation*}
+    Where for all $n \in \Nats$.
+    \begin{equation*}
+      \sup J_n \leq \sup J_{n+1}
+    \end{equation*}
+    \begin{equation*}
+      \inf J_n \leq \inf J_{n+1}
+    \end{equation*}
+    Now consider the function $f: F \to \Nats$ defined by $f(a_n) = n$. Clearly the function defined by this sequence is injective and therefore $F$ is countable. 
+    
+  \end{proof}
+
+\end{exercise}
+
+\vspace{.5in}
+
+
+
+
+\begin{exercise}{6} Let $(x_n)$ be a sequence converging to $L$. Define,
+  \begin{equation*}
+    y_n = \dfrac{x_1+\dots+x_n}{n}.
+  \end{equation*}
+  That is $y_n$ is the average of the first $n$ terms of the $x_n$ sequence. Show that $y_n = L$ as well. \\
+
+\begin{proof}
+  Suppose that the sequence $(x_n)$ is convergent to $L$. Therefore by definition for all $\epsilon > 0$,
+  \begin{equation*}
+    |x_n - L|< \epsilon.
+  \end{equation*} 
+  Now consider the expression,
+  \begin{equation*}
+    |y_n - L| = |\dfrac{x_1+\dots+x_n}{n} - L|.
+  \end{equation*}
+  Through some algebra we get,
+  \begin{align*}
+    |y_n - L|&= \dfrac{1}{n}|(x_1+\dots+x_n) - nL|,\\
+            &= \dfrac{1}{n}|(x_1 - L)+\dots+(x_n - L)|.
+  \end{align*}
+  By triangle inequality,
+  \begin{equation*}
+    |y_n - L|  \le \dfrac{1}{n}|(x_1 - L)|+\dots+|(x_n - L)|.
+  \end{equation*}
+  Since $(x_n)$ is convergent to $L$ we know that for all $\epsilon > 0$ there exists an $N\in \Nats$ such that for all $n \geq N$,
+  \begin{equation*}
+    |x_n - L|< \epsilon.
+  \end{equation*} 
+  By substitution we know that,
+\begin{align*}
+  |y_n - L| &< \dfrac{n \epsilon}{n},\\
+  &< \epsilon.
+\end{align*}
+Thus $y_n$ is convergent with $y_n \to L$.
+\end{proof}
+
+\end{exercise}
+
+\vspace{.5in}
+
+
+
+\begin{exercise}{7} Use the Bolzano Weierstrass Theorem to prove the Monotone Convergence Theorem 
+  without assuming any other form of the Axiom of Completeness.\\
+  
+  \begin{proof} Consider $(a_n)$, a monotone and bounded sequence. Without loss of generality let's assume
+    the $(a_n)$ is monotone increasing. By Bolzano Weierstrass we know that there exists a convergent subsequence of $(a_n)$,
+    $(a_{n_k}) \to L$. Therefore for all $\epsilon > 0$ there exists an $K \in \Nats$ such that for all $k \geq K$,
+    \begin{equation*}
+      |(a_{n_k})| < \epsilon.
+    \end{equation*} 
+    \begin{align*}
+      |(a_{n_k}) - L| &< \epsilon\\
+      -\epsilon < &(a_{n_k}) - L < \epsilon\\
+      L - \epsilon < &(a_{n_k})< \epsilon + L
+    \end{align*}
+    Let $N = n_K$, note that for all $n \geq N$ there exists a $k \geq K$, such that
+    \begin{equation*}
+      a_{n_k} \le a_n \le a_{n_{k+1}}.
+    \end{equation*}
+    Thus we get the following inequality
+    \begin{equation*}
+      L - \epsilon < a_{n_k} \le a_n \le a_{n_{k+1}}< \epsilon + L.
+    \end{equation*}
+    Therefore $a_n$ converges to $L$. 
+  \end{proof}
+
+
+
+
+  \begin{exercise}{8} Suppose $(x_n)$ is a sequence and that for all $n \geq 2$,
+    \begin{equation*}
+      |x_{n+1} - x_n| \le \dfrac{1}{2} |x_n - x_{n-1}|.
+    \end{equation*}
+    Show that the sequence $(x_n)$ converges. \\
+
+    \begin{proof}
+      Suppose $(x_n)$ is a sequence and that for all $n \geq 2$,
+      \begin{equation*}
+        |x_{n+1} - x_n| \le \dfrac{1}{2} |x_n - x_{n-1}|.
+      \end{equation*}
+
+
+    \end{proof}
+
+
+
+
+
+  \end{exercise}
+
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
