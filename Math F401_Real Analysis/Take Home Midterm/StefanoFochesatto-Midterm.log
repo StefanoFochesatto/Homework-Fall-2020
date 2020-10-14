@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 OCT 2020 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  13 OCT 2020 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -322,47 +322,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
-
- []
-
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 159--162
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
-[4] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
+
+ []
+
+[4] [5] [6] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.aux) ) 
 Here is how much of TeX's memory you used:
  2374 strings out of 492616
  30480 string characters out of 6129482
- 97290 words of memory out of 5000000
+ 98290 words of memory out of 5000000
  6264 multiletter control sequences out of 15000+600000
  24118 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,11n,43p,386b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.pdf" (4 pages, 55649 bytes).
+ 27i,11n,43p,386b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.pdf" (6 pages, 64211 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
