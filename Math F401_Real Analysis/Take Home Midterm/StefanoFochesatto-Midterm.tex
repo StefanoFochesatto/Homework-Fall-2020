@@ -113,7 +113,42 @@
   A fully rigorous proof will involve a proof by induction. \\
 
 \begin{proof}
-  
+  We will proceed by induction to prove the following inequality for all $n in \Nats$ when $n \geq 9$,
+  \begin{equation*}
+    \dfrac{1}{n!} \le \dfrac{1}{4^n}.
+  \end{equation*}
+  Consider the base case where $n = 9$,
+  \begin{equation*}
+    \dfrac{1}{4^n} = \dfrac{1}{4^9} \le \dfrac{1}{9!} = \dfrac{1}{n!}.
+  \end{equation*}
+  Now suppose there exists some $n \in \Nats$ where $n \geq 9$ such that,
+  \begin{equation*}
+    \dfrac{1}{n!} \le \dfrac{1}{4^n}.
+  \end{equation*}
+  Now consider $\frac{1}{n!}$, and by substituting our induction hypothesis,
+  \begin{align*}
+    \dfrac{1}{n+1!}  &= \dfrac{1}{n+1}\dfrac{1}{n!}\\
+    &\le  \dfrac{1}{n+1}\dfrac{1}{4^n}\\
+    &\le  \dfrac{1}{4}\dfrac{1}{4^n}\\
+    &\le  \dfrac{1}{4^{n+1}}.
+  \end{align*}
+  Therefore for large $n$ we know that, 
+  \begin{equation*}
+  \dfrac{3^n}{n!} \le \dfrac{3^n}{4^n} = \dfrac{3}{4}^n.
+  \end{equation*}
+  Furthermore it must also be the case that, 
+  \begin{equation*}
+    \lim_{n \to \infty}\dfrac{3^n}{n!} \le  \lim_{n \to \infty}\dfrac{3}{4}^n.
+  \end{equation*}
+  Clearly, $\dfrac{3^n}{n!}$ is bounded below by $0$ and since,
+  \begin{equation*}
+    \lim_{n \to \infty}\dfrac{3}{4}^n \to 0.
+  \end{equation*}
+It must be the case that,
+\begin{equation*}
+  \lim_{n \to \infty}\dfrac{3^n}{n!} = 0.
+\end{equation*}
+
 \end{proof}
 
 \end{exercise}
@@ -160,20 +195,20 @@ Thus $(z_n)$ is convergent.
 \begin{exercise}{5} Suppose $F$ is a collection of open intervals such that if $I,J \in F$ and $I \neq J$, then $I \cap J = \emptyset$. Prove that $F$ is countable.\\
 
   \begin{proof}
-    Suppose $F$ is a collection of open intervals such that each interval is disjoint. Note since all 
-    intervals are disjoint it must follow that the pair of $\sup J$ and $\inf J$ is unique for all $J \in F$. Consider the sequence of ordered pairs,
+    Suppose $F$ is a collection of open intervals such that each interval is disjoint. By Theorem 1.4.3 (The Density of $\Rats$ in $\Reals$) we 
+    know that there must exist at least one rational number $r$ in side of each open interval. Define $A$ as a set containing the 
+    compliment of the union of all the open sets in $F$,
     \begin{equation*}
-      a_n = (\inf(J_1),\sup(J_1)),\dots,(\inf(J_n),\sup(J_n)).
+     ( \bigcup_F J)^c \in A.
     \end{equation*}
-    Where for all $n \in \Nats$.
+    Note that $|A| = 1$, and that,
     \begin{equation*}
-      \sup J_n \leq \sup J_{n+1}
+      (\bigcup_F J)\cup (\bigcup_A I) = \Reals.
     \end{equation*}
-    \begin{equation*}
-      \inf J_n \leq \inf J_{n+1}
-    \end{equation*}
-    Now consider the function $f: F \to \Nats$ defined by $f(a_n) = n$. Clearly the function defined by this sequence is injective and therefore $F$ is countable. 
-    
+    Consider the function,
+    $f: \Rats \to F \cup A$ such that $f(r) = J$ when $r \in J$. Now we will show that $f$ is a surjective function. Consider
+    some $J \in F \cup A$, and note that by Theorem 1.4.3 there must exist some rational number $r \in J$ and thus $f$ is surjective. It then follows that $F \cup A$ is at most countable 
+    and since $F$ and $A$ are also disjoint, $|F| = |F \cup A| - 1$. Thus $F$ is also at most countable. 
   \end{proof}
 
 \end{exercise}
@@ -264,19 +299,57 @@ Thus $y_n$ is convergent with $y_n \to L$.
       \begin{equation*}
         |x_{n+1} - x_n| \le \dfrac{1}{2} |x_n - x_{n-1}|.
       \end{equation*}
-
-
+      Note that by expansion and iterative substitution, we get the following expression,
+      \begin{equation*}
+        |x_n - x_{n_1}| = \dfrac{1}{2^{n-1}}|x_2 - x_1|.
+      \end{equation*}
+      Let $M = |x_2 - x_1|$ and recall that in Homework 4, supplemental exercise 2 we proved that,
+      \begin{equation*}
+        \lim_{n \to \infty} \dfrac{1}{2^n} = 0. 
+      \end{equation*}
+      Thus it follows by Algebraic Limit Theorem that,
+      \begin{equation*}
+        \lim |x_n - x_{n_1}| = \lim \dfrac{M}{2^n} = M0 = 0.
+      \end{equation*}
+      Now consider the following, where $m,n \in \Nats$ and $m \geq n$,
+      \begin{equation}
+        |x_m - x_n| = |x_m - x_{m-1} + x_{m-1} - \dots + x_{n+1} - x_n|.
+      \end{equation}
+      By Triangle Inequality we get that,
+      \begin{equation*}
+        |x_m - x_n| \le \sum_{i = 1}^{m-n} |x_{1+n} - x_{1+n - 1}|.  
+      \end{equation*}
+      Using the given property we can get each term in the sum as a factor of $|x_{n+1} - x_n|$,
+      \begin{equation*}
+        |x_m - x_n| \le \sum_{i = 1}^{m-n} \dfrac{1}{2^{i-1}}|x_{n+1} - x_n|.
+      \end{equation*}
+      Since the sum is a constant term let,
+      \begin{equation*}
+        C = \sum_{i = 1}^{m-n} \dfrac{1}{2^{i-1}}.
+      \end{equation*}
+      Let $\epsilon > 0$. Consider an $N\in \Nats$ such that for all $n\geq N$,
+      \begin{equation*}
+        |x_{n+1} - x_n| < \dfrac{\epsilon}{C}. 
+      \end{equation*}
+      Therefore we get the following, 
+      \begin{align*}
+        |x_m - x_n| &\le C |x_{n+1} - x_n|,\\
+        &< C \dfrac{\epsilon}{C},\\
+        &< \epsilon.
+      \end{align*} 
+      Therefore the sequence $x_n$ is Cauchy and converges.
     \end{proof}
-
-
-
-
-
   \end{exercise}
 
 \end{exercise}
 
 
+\begin{exercise}{9} Let $(a_n)$ and $(b_n)$ be sequences with $b_n \geq 0$
+  for all $n$ and and $\lim_nb_n = 0$. We say that 
+  $a_n = O(b_n)$ If there is a constsnt $C$ such thtat $|a_n|\le Cb_n$ for all $n$. Roughly
+  speaking, $a_n = O(b_n)$ if the sequence $a_n$ converges to zero at least as fast as teh sequence $b_n$.\\
+  Suppose $a_n$ and $b_n$ are sequences with $b_n > 0$. Suppose also that $\lim frac{a_n}{b_n} = L$ for some number $L$.
+  Prove that $a_n = O(b_n)$. 
 
 
 
@@ -284,15 +357,7 @@ Thus $y_n$ is convergent with $y_n \to L$.
 
 
 
-
-
-
-
-
-
-
-
-
+\end{exercise}
 
 
 
