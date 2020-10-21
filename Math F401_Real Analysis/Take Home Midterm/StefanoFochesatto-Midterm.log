@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  13 OCT 2020 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.24)  14 OCT 2020 14:04
 entering extended mode
 **"c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.tex"
 ("c:/Users/Stefano Fochesatto/School Work/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm/StefanoFochesatto-Midterm.tex"
@@ -353,19 +353,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
-[4] [5] [6] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\Take Home Midterm\StefanoFochesatto-Midterm.aux") ) 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 347--353
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+[6] [7] [8] ("c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\Take Home Midterm\StefanoFochesatto-Midterm.aux") ) 
 Here is how much of TeX's memory you used:
  3019 strings out of 481212
  41232 string characters out of 2899842
- 278743 words of memory out of 3000000
+ 279743 words of memory out of 3000000
  18577 multiletter control sequences out of 15000+200000
  555566 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,393b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,45p,393b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Stefano Fochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\Take Home Midterm\StefanoFochesatto-Midterm.pdf" (6 pages, 71049 bytes).
+Output written on "c:/Users\Stefano Fochesatto\School Work\Homework-Fall-2020\Math F401_Real Analysis\Take Home Midterm\StefanoFochesatto-Midterm.pdf" (8 pages, 79618 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
