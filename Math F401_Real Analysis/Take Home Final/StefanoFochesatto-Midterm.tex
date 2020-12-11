@@ -80,8 +80,21 @@
 \begin{document}
 
 %% Some case of the ratio test or l'hospitals rule
-\begin{exercise}{1} Suppose the $(x_n)$ and $(y_n)$ are sequences that $\lim_{n \to  \infty} x_n = L$ and $\lim_{n \to  \infty} x_n = \infty$.
+\begin{exercise}{1} Suppose the $(x_n)$ and $(y_n)$ are sequences that $\lim_{n \to  \infty} x_n = L$ and $\lim_{n \to  \infty} y_n = \infty$.
   Show that $\lim_{n \to  \infty} x_n/y_n = 0$. 
+\begin{proof}
+  Suppose that $(x_n)$ and $(y_n)$ are sequences that $\lim_{n \to  \infty} x_n = L$ and $\lim_{n \to  \infty} x_n = \infty$.
+  First we will show that the series $\frac{1}{y_n}$ converges to 0. Let $\epsilon > 0$.  Let $\epsilon > \frac{1}{y_N}$. Since $y_n$ diverges there must exists some 
+  $N \geq n$ such that $\frac{1}{y_n} \geq \frac{1}{y_N}$, therefore,
+  \begin{align*}
+    |\frac{1}{y_n} - 0| &= \frac{1}{y_n},\\
+    &\le \frac{1}{y_N},\\
+    &< \epsilon. 
+  \end{align*}
+  Thus $\lim_{n \to  \infty} \frac{1}{y_n} = 0$. By ALT we know that $\lim_{n \to  \infty} x_n/y_n = L(0) = 0$.
+\end{proof}
+
+
 \end{exercise}
 \vspace{.5in}
 
@@ -96,13 +109,62 @@
   \end{equation*}
   Where each $a_k$ is an integer, $n \geq 1$ and $a_n \neq 0$. Show that the collection of all algebraic 
   number is countable.\\
+
+  \begin{proof}
+    Suppose an $n$ degree polynomial with a non-zero leading term. Note that the set of roots to this polynomial
+    is finite and by the Fundamental Theorem of Algebra there are at most $n$ real roots. Let $A_n$ be the set of all
+    solutions to an $n$ degree polynomial with a non-zero leading term. Note that since $a_n \in \Ints$, by the multiplication property an upper 
+    bound on $|A_n|$ is given by,
+    \begin{equation*}
+      |A_n| \le n|\Ints|^n.
+    \end{equation*} 
+    Since $A_n$ is bounded above by a countable product, $A_n$ must also be countable. By Definition the set of all algebraic
+    numbers is the set of all roots of all polynomial equations that have order $n \geq 1$ and non- zero leading terms. Thus 
+    the set of algebraic numbers is given by,
+    \begin{equation*}
+      \bigcup_{i = 1}^{\infty} A_i.
+    \end{equation*}
+    Therefore by Theorem 1.5.8 (ii) the set of all algebraic numbers is countable. 
+
+
+
+
+
+  \end{proof}
+
+
 \end{exercise}
 \vspace{.5in}
 
 
-\begin{exercise}{3} Let $p$ be a fifth order polynomial, so $p(x) = \sum_{k = 1}^5 a_kx^k$ where each 
+\begin{exercise}{3} Let $p$ be a fifth order polynomial, so $p(x) = \sum_{k = 0}^5 a_kx^k$ where each 
   $a_k \in \Reals$, and $a_5 \neq 0$. Prove that there exists a solution of $p(x) = 0$.\\
-  
+
+  \begin{proof}
+    Suppose that $p$ be a fifth order polynomial, so $p(x) = \sum_{k = 1}^5 a_kx^k$ where each 
+    $a_k \in \Reals$, and $a_5 \neq 0$. Consider the following factorization of $p$,
+    \begin{equation*}
+      p(x) = x^{5}(a_5 + \frac{a_4}{x} + \frac{a_3}{x^2} + \frac{a_2}{x^3} + \frac{a_1}{x^4} + \frac{a_0}{x^5}).
+    \end{equation*}
+    By the ALT we can see that the limit as $x \to \pm \infty$ of the summand term, we get,
+    \begin{equation*}
+      \lim_{x \to \infty} (a_5 + \frac{a_4}{x} + \frac{a_3}{x^2} + \frac{a_2}{x^3} + \frac{a_1}{x^4} + \frac{a_0}{x^5}) = a_5,
+    \end{equation*}
+    \begin{equation*}
+      \lim_{x \to -\infty} (a_5 + \frac{a_4}{x} + \frac{a_3}{x^2} + \frac{a_2}{x^3} + \frac{a_1}{x^4} + \frac{a_0}{x^5}) = a_5.
+    \end{equation*}
+    Looking at the limit of $p(x)$ as $x \to \pm \infty$ we see that,
+    \begin{equation*}
+      \lim_{x \to \infty} p(x) = x^{5} a_5 = \infty,
+    \end{equation*}
+    \begin{equation*}
+      \lim_{x \to -\infty} p(x) = x^{5} a_5 = -\infty. 
+    \end{equation*}
+    Thus there exists some $a, b \in \Reals$ such that $f(a)<0$ and $f(b)>0$. Note that since $p(x)$ is a polynomial 
+    it is continuous on the domain $[a,b]$. Since $f(a)<0<f(b)$, then by the Intermediate Value Theorem there must exists a $c \in (a,b)$
+    such that $p(c) = 0$. 
+  \end{proof}
+
 \end{exercise}
 \vspace{.5in}
 
@@ -112,8 +174,32 @@
 %Algebraic Limit theorem then use a p seris argument. Look for a proof of the root test
 \begin{exercise}{4} Let $\sum_{k = 1}^{\infty}a_k$ be a series. Suppose moreover that $\lim_{k \to \infty} |a_k|^{\frac{1}{k}}$
   exists and equals $L$. Show that the series converges absolutely if $L<1$ and diverges if $L>1$. \\
+\begin{proof}
+  Suppose the series $\sum_{k = 1}^{\infty}a_k$ and that the $\lim_{k \to \infty} |a_k|^{\frac{1}{k}}$
+  exists and equals $L$. Note that by the ALT we know that since $\lim_{k \to \infty} |a_k|^{\frac{1}{k}} = L$
+  \begin{equation*}
+    \lim_{k \to \infty} {|a_k|^{\frac{1}{k}}}^k =  \lim_{k \to \infty} |a_k| = L^k
+  \end{equation*}
+  Let $L < 1$. Note that if $L<1$ there exist some $r$ such that $L<r<1$ and furthermore we know that, $L^k<r^k<1$.
+\end{proof}
+
+
+
+
+
+
+
+
+
 \end{exercise}
 \vspace{.5in}
+
+
+
+
+
+
+
 
 
 
@@ -143,8 +229,32 @@
    \end{cases}
   \end{equation*}
   Determine, with proof, where $f$ is continuous.\\
+  
+\begin{proof}
+  Suppose $(r_n)$ is an enumeration of the rational numbers, and we define a function $f: \Reals \to \Reals$. 
+  Let $c \in \Rats$. Now consider the construction of a sequence $x_n \to c$ where $x_n \not\in \Reals$. Note that the function limit
+  of the sequence $f(x) \to 0$ while $f(c) = \frac{1}{n}$ for some $n$. Since $x_n \to c$ and $f(x_n) \not\to f(c)$ we get that by Corollary 4.3.3
+  $f$ is not continuous at $c \in \Rats$. \\
+
+  Now let $c \not\in \Rats$. Suppose some sequence $x_n \to c$. Note that $x_n$ is either comprised entirely of rational numbers, or irrational numbers or a mic of both.
+  In all cases $f(x_n) \to 0$ and since $f(c) = 0$ by the sequential definition of continuity $f(x)$ is continuous at $c \not\in \Rats$.
+
+
+\end{proof}
+
+
+
+
+
+
 \end{exercise}
 \vspace{.5in}
+
+
+
+
+
+
 
 %Take the given definition perform a change of variable and note that how the limits change. 
 \begin{exercise}{8} Let $g$ be defined on an interval $A$, and let $c \in A.$\\

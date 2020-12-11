@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 DEC 2020 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  14 NOV 2020 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Final/StefanoFochesatto-Midterm.tex"
-(/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Final/StefanoFochesatto-Midterm.tex
+**"/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex"
+(/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -223,7 +223,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Info: Redefining \not on input line 1043.
 LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
-) (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Final/StefanoFochesatto-Midterm.aux)
+) (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.aux)
 \openout1 = `StefanoFochesatto-Midterm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 80.
@@ -308,61 +308,64 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 83.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
+/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex:92: Missing $ inserted.
+<inserted text> 
+                $
+l.92   -\epsilon
+                 < f(x) - L< \epsilon
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
- []
+/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.tex:94: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.94 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
-
- []
-
-[3] [4] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Final/StefanoFochesatto-Midterm.aux) ) 
+] (/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.aux) ) 
 Here is how much of TeX's memory you used:
- 2374 strings out of 492616
- 30462 string characters out of 6129482
- 98288 words of memory out of 5000000
+ 2368 strings out of 492616
+ 30472 string characters out of 6129482
+ 93293 words of memory out of 5000000
  6264 multiletter control sequences out of 15000+600000
- 24118 words of font info for 61 fonts, out of 8000000 for 9000
+ 20110 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,11n,43p,384b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Final/StefanoFochesatto-Midterm.pdf" (4 pages, 60484 bytes).
+ 27i,10n,43p,389b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/stefanofochesatto/Desktop/Homework-Fall-2020/Math F401_Real Analysis/Take Home Midterm #2/StefanoFochesatto-Midterm.pdf" (1 page, 38387 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
