@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\doclabel{Math 401: Take Home Final}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
+
+\begin{document}
+
+%% Some case of the ratio test or l'hospitals rule
+\begin{exercise}{1} Suppose the $(x_n)$ and $(y_n)$ are sequences that $\lim_{n \to  \infty} x_n = L$ and $\lim_{n \to  \infty} x_n = \infty$.
+  Show that $\lim_{n \to  \infty} x_n/y_n = 0$. 
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+%% Induction, true on order 0 and 1. Suppose its true for order n. Consider an order n+1 polynomial f = (x - a)q(x). By The induction hypothesis,
+%% we know that f has at most n roots.
+\begin{exercise}{2} A number is algebraic if it is a solution of a polynomial equation,
+  \begin{equation*}
+    a_nx^n + a_{n-1}x^{n-1}+\dots+a_1x + a_0 = 0
+  \end{equation*}
+  Where each $a_k$ is an integer, $n \geq 1$ and $a_n \neq 0$. Show that the collection of all algebraic 
+  number is countable.\\
+\end{exercise}
+\vspace{.5in}
+
+
+\begin{exercise}{3} Let $p$ be a fifth order polynomial, so $p(x) = \sum_{k = 1}^5 a_kx^k$ where each 
+  $a_k \in \Reals$, and $a_5 \neq 0$. Prove that there exists a solution of $p(x) = 0$.\\
+  
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+%Algebraic Limit theorem then use a p seris argument. Look for a proof of the root test
+\begin{exercise}{4} Let $\sum_{k = 1}^{\infty}a_k$ be a series. Suppose moreover that $\lim_{k \to \infty} |a_k|^{\frac{1}{k}}$
+  exists and equals $L$. Show that the series converges absolutely if $L<1$ and diverges if $L>1$. \\
+\end{exercise}
+\vspace{.5in}
+
+
+
+%Show compactness on the interval [x, x+L], or show that f is bounded and the use the definition of uniform convergence
+\begin{exercise}{5} We say that a function $f: \Reals \to \Reals$ is periodic if there is a number $L$ such that $f(x) = f(x + L)$
+  for all $x \in \Reals$. Show that a continuous, periodic function is uniformly continuous.\\
+  
+\end{exercise}
+\vspace{.5in}
+
+%http://math341.cardon.byu.edu/solutions341/hw_2.6.pdf
+\begin{exercise}{6} Use the Nested interval Property to deduce the Axiom of Completeness without using any other form of the Axiom of
+  Completeness.HINT: Look at the proof of the Bolzano-Weierstrass Theorem.\\
+  
+\end{exercise}
+\vspace{.5in}
+
+
+% Use the density of rationals to get a sequence or rationals to $c$. Note that every sequence of irrational numbers converging to 
+% c is sandwiched by a sequence of rationals converging to $c$ thus the function is continuous on irrationals. 
+\begin{exercise}{7} Let $(r_n)$ be an enumeration of the rational numbers. Define $f: \Reals \to \Reals$ by 
+  \begin{equation*}
+    f(x) = 
+    \begin{cases} 
+      \dfrac{1}{n} & x = r_n \\
+      0 & x \not\in \Rats 
+   \end{cases}
+  \end{equation*}
+  Determine, with proof, where $f$ is continuous.\\
+\end{exercise}
+\vspace{.5in}
+
+%Take the given definition perform a change of variable and note that how the limits change. 
+\begin{exercise}{8} Let $g$ be defined on an interval $A$, and let $c \in A.$\\
+  \begin{enumerate}
+    \item Explain why $g'(c)$ in Definition 5.2.1 could have been given by,
+    \begin{equation*}
+      g'(c) = \lim_{h \to 0} \dfrac{g(c+h) - g(c)}{h}.
+    \end{equation*}
+
+
+%https://math.stackexchange.com/questions/576198/prove-that-the-symmetric-derivative-of-a-function-exists-whenever-the-derivative 
+    \item  Assume $A$ is open. If $g$ is differentiable at $c \in A$, show
+    \begin{equation*}
+      g'(c) = \lim_{h \to 0} \dfrac{g(c+h) - g(c - h)}{2h}
+    \end{equation*}
+  \end{enumerate}
+  
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+%EZ clap definition 
+\begin{exercise}{9} Consider the function,
+  \begin{equation*}
+    f(x) = \sum_{k = 1}^{\infty} \dfrac{1}{2^k} sin(kx).
+  \end{equation*}
+  Show that $f$ is differentiable.
+  
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+% By contradiction suppose that there is a solution to f(x) = x, By the definition of the derivative we know that,
+%f'(x) = 1. Since the f">0 we know that f" is strictly increasing, since f'(1)<1 we know that f'(x)<x
+\begin{exercise}{10} Suppose that $f: [0,1] \to \Reals$ is twice differentiable, $f(0) > 0$, $f(1) = 1$, 
+  and $f'(1) < 1$. Suppose also that $f'' > 0$ on $[0,1]$. Show that there does not exist a solution of the equation
+  $f(x) = x$ in $[0,1)$.
+  
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+
+%https://www.slader.com/textbook/9781493927128-understanding-analysis-2nd-edition/223/exercises/5/#
+\begin{exercise}{11} Assume that, for each $n$, $f_n$ is an integrable function on $[a,b].$
+  If $(f_n) \to f$ uniformly on $[a,b]$ prove that $f$ is also integrable on this set. 
+  
+\end{exercise}
+\vspace{.5in}
+
+%https://www.slader.com/textbook/9781493927128-understanding-analysis-2nd-edition/237/exercises/8/#
+\begin{exercise}{12} Let,
+  \begin{equation*}
+    L(x) = \int_1^x \dfrac{1}{t} dt,
+  \end{equation*}
+  where we consider only $x > 0$.
+  \begin{enumerate}
+    \item What is $L(1)$? Explain why $L$ is differentiable and find $L'(x).$
+    \item Show that $L(xy) = L(x)+L(y)$
+    \item Show that $L(x/y) = L(x) - L(y)$
+    \item Let,
+    \begin{equation*}
+      \gamma_n = (1 + \frac{1}{2} + \frac{1}{3}+ \dots+ \frac{1}{n}) - L(n).
+    \end{equation*}
+    Prove that $(\gamma_n)$ converges. The constant $\gamma = \lim \gamma_n$ is called Euler's constant.
+  \end{enumerate}
+\end{exercise}
+
+
+
+\end{document}

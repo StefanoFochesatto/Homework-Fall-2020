@@ -1,0 +1,375 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\doclabel{Math 401: Take Home Midterm \#2}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
+
+\begin{document}
+%NOT GOOD PROOF
+%
+%
+%
+
+\begin{exercise}{1} Suppose $f: A \to \Reals$ and $c$ is a limit point of $A$. Suppose $f(x) \geq 0$ for all 
+  $x \in X$ and that $\lim_{x \to c}f(x)$ exist. Show that the limit is non-negative. Provide two proofs, one $\epsilon-\delta$
+  style, and the other using the sequential characterization of limits\\
+
+
+  \begin{proof}
+    Suppose $f: A \to \Reals$ and $c$ is a limit point of $A$. Suppose $f(x) \geq 0$ for all 
+  $x \in X$ and that $\lim_{x \to c}f(x) = L$. Also suppose for the sake of contradiction that $L < 0$. By the definition of a Functional Limit
+  we know that for all $\epsilon > 0$ there exists a $\delta > 0$ such that whenever $0 < |x - c|< \delta$ it follows that $|f(x) - L|< \epsilon$.
+  Now consider $\epsilon = -L$. By substitution we get the following inequality,
+  \begin{equation*}
+    |f(x) - L|< -L.
+  \end{equation*}
+  Expanding the inequality and solving for $f(x)$ we find,
+  \begin{align*}
+    L < &f(x) - L < -L,\\
+    2L < &f(x) < 0.
+  \end{align*}
+  Since $2L < 0$ we find that our final inequality implies that $f(x)<0$ and thus a contradiction. 
+  
+\end{proof}
+
+\begin{proof}
+  Suppose $f: A \to \Reals$ and $c$ is a limit point of $A$. Suppose $f(x) \geq 0$ for all 
+  $x \in X$ and that $\lim_{x \to c}f(x) = L$.  Sequential Characterization of Limits we know that if $\lim_{x \to c}f(x) = L$ then for all sequences 
+  $(x_n)\subseteq X$ satisfying $(x_n) \to c$ it we know that $f(x_n) \to L$. By the Order Limit Theorem we know that if $f(x_n)\geq 0$ then $L \geq 0$.
+\end{proof}
+
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+\begin{exercise}{2} Let $a_n$ be a sequence of numbers such that for some $M \in \Reals$, $\sum_{n = 1}^{\infty}a_nM^n$ converges. Suppose
+  that $|x| < M$. Show that $\sum_{n = 1}^{\infty}a_nx^n$ converges absolutely. Give an example to show that divergence is possible if $|x| = |M|$.
+  Hint: $(a_nM^n)$ converges to zero and hence bounded. \\
+  \begin{proof}
+    Suppose that $a_n$ be a sequence of numbers such that for some $M \in \Reals$, $\sum_{n = 1}^{\infty}a_nM^n$ converges and that for some $x \in \Reals$
+    $|x|<M$. Consider the series $\sum_{n = 1}^{\infty}|a_nx^n|$, and through algebra we see that,
+    \begin{align*}
+      \sum_{n = 1}^{\infty}|a_nx^n| &= \sum_{n = 1}^{\infty}|a_n||x|^n,\\
+       &= \sum_{n = 1}^{\infty}|a_n|M^{n}M^{-n}|x|^n,\\
+       &= \sum_{n = 1}^{\infty}|a_n|M^{n} \left(\dfrac{|x|}{M}\right)^n.
+    \end{align*}
+   Since the sequence $(a_nM^n)$ converges to zero its bounded, therefore there exists some $||a_n|M^{n}|<A$. Therefore we get the following inequality,
+   \begin{equation*}
+    \sum_{n = 1}^{\infty}|a_nx^n| \le \sum_{n = 1}^{\infty} A \left(\dfrac{|x|}{M}\right)^n.
+   \end{equation*}
+   Recall that $|x|<M$ and therefore we can surmise that $|\frac{|x|}{M}|<1$. Thus it follows that,
+   \begin{equation*}
+    \sum_{n = 1}^{\infty} A \left(\dfrac{|x|}{M}\right)^n = \dfrac{A}{1 - \dfrac{|x|}{M}},
+   \end{equation*}
+   is a convergent geometric series. Thus by the Comparison Test we get that, $\sum_{n = 1}^{\infty}|a_nx^n|$ is convergent and therefore $\sum_{n = 1}^{\infty}a_nx^n$ converges absolutely.
+  \end{proof}
+\vspace{.25in}
+
+\solution  To show that divergence is possible if $|x| = |M|$, let $M = -1$, $x = 1$ and $a_n = \dfrac{1}{n}$. By substitution this gives us the following,
+\begin{equation*}
+  \sum_{n = 1}^{\infty}a_nM^n = \sum_{n = 1}^{\infty}\dfrac{(-1)^n}{n}.
+\end{equation*}
+A convergent alternating series. Substituting $x$ we get,
+\begin{equation*}
+  \sum_{n = 1}^{\infty}a_nx^n = \sum_{n = 1}^{\infty}\dfrac{1}{n}.
+\end{equation*}
+The famously divergent harmonic series. 
+\end{exercise}
+\vspace{.5in}
+
+
+
+\begin{exercise}{3} Suppose that $f: (0,1]\to \Reals$ is uniformly continuous. Show that $\lim_{x\to 0} f(x)$ exists. 
+
+  \begin{proof}
+
+    Suppose that $f: (0,1]\to \Reals$ is uniformly continuous. Consider some $x_n \subseteq (0,1]$ such that $x_n \to c$. Since $x_n$ is convergent, by 
+    Theorem 2.6.4 it is also a cauchy sequence. Recall that in Exercise 4.4.6(b) we proved that on a uniformly continuous function, if $x_n$ is cauchy then $f(x_n)$ is also cauchy.
+    By Theorem 2.6.4 we know that since $f(x_n)$ is cauchy it also converges, and thus there exists some $L$ such that $f(x_n) \to L$.\\
+
+    Demonstrating that $f(x_n) \to L$ is the same for all sequences $x_n$, we first suppose $x_n \to c$ and $z_n \to c$ such that $f(x_n)\to L_x$ and $f(z_n)\to L_z$
+    where $L_x \neq L_z$. By the Algebraic Limit Theorem we know that $|x_n - z_n| \to 0$ and we also know that since $L_x \neq L_z$ there must exists some $\epsilon_0$ that has the following property,
+    \begin{equation*}
+      |f(x_n) - f(z_n)|\geq \epsilon_0.
+    \end{equation*}
+    Thus by Theorem 4.4.5 $f$ is not uniformly continuous and thus a contradiction. Therefore by Theorem 4.2.3 (Sequential Criterion for Functional Limits) we know that  $\lim_{x\to 0} f(x)$ exists. 
+  
+  \end{proof}
+
+
+\end{exercise}
+\vspace{.5in}
+
+
+
+\begin{exercise}{4} Let $f$ be a function defined on all of $\Reals$, and assume there is a constant $c$ such that 
+  $0<c<1$ and for all $x,y \in \Reals$,
+  \begin{equation*}
+    |f(x) - f(y)|\le c|x - y|
+  \end{equation*}
+  \begin{enumerate}
+    \item Show that $f$ is continuous on $\Reals$.\\
+    \begin{proof}
+      Let $\epsilon > 0$. Now consider $\delta = \frac{\epsilon}{c}$ then for all $|x - y| < \delta$ we see that from the inequality above we get that,
+      \begin{align*}
+    |f(x) - f(y)|&\le c|x - y|,\\
+    \dfrac{1}{c}|f(x) - f(y)|&\le |x - y|,\\
+    \dfrac{1}{c}|f(x) - f(y)|&< \delta\\
+    \dfrac{1}{c}|f(x) - f(y)|&< \dfrac{\epsilon}{c},\\
+    |f(x) - f(y)|&< \epsilon.\\
+      \end{align*}
+      Thus by definition $f$ is continuous on $\Reals$.
+    \end{proof}
+    \vspace{.25in}
+
+
+    \item Pick some point $y_1 \in \Reals$ and construct the sequence,
+    \begin{equation*}
+      (y_1,f(y_1),f(f(y_1)),\dots f^n(y_1)).
+    \end{equation*}
+    In general, if $y_{n+1} = f(y_n)$, show that the resulting sequence $(y_n)$ is a cauchy sequence. Hence we may let $y = \lim y_n$.\\
+
+    \begin{proof}
+      Suppose the the sequence above and note that by the previous inequality for any two elements in the sequence $f^n(y_1), f^m(y_1)$ where $n > m$ we get,
+      \begin{equation*}
+        |f^n(y_1) - f^m(y_1)|\le c|f^{n-1}(y_1) - f^{m-1}(y_1)|.
+      \end{equation*}
+      Continually applying the previous inequality to the right hand side, we get an upper bound for $|f^n(y_1) - f^m(y_1)|$,
+      \begin{align*}
+        |f^n(y_1) - f^m(y_1)|&\le c|f^{n-1}(y_1) - f^{m-1}(y_1)|\\
+        &\le c^2|f^{n-2}(y_1) - f^{m-2}(y_1)|\\
+        &\le c^m|f^{n-m}(y_1) - f^{m-m}(y_1)|\\
+        &= c^m|f^{n-m}(y_1) - y_1|.
+      \end{align*}
+      Let $M = |f^{n-m}(y_1) - y_1|$, and note that since $0<c<1$ by Example 2.5.3 we know that $c^mM \to 0$. By the Order Limit Theorem we know that 
+      $|f^n(y_1) - f^m(y_1)|$ is convergent and therefore $(y_n)$ is a cauchy sequence.
+    \end{proof}
+    \vspace{.25in}
+
+
+    \item Prove that $y$ is a fixed point of $f$ (i.e., $f(y) = y$) and that it is unique in this regard. \\
+    \begin{proof}
+      By the preceding problem we have shown that $y = \lim y_n$ where $y_{n} = f^n(y_1)$. Now consider $f(y)$, and by substitution we get that,
+      \begin{align*}
+        f(y) &= f(\lim(y_n)),\\
+         &= f(\lim(y_n)),\\
+         &= f(\lim f^n(y_1)),\\
+         &= \lim f^{n+1}(y_1)),\\
+         &= y.
+      \end{align*}
+      Thus we have shown that y is fixed. Now suppose there exists some $x$ with the property that $f(x) = x$. By substitution into our initial inequality we get,
+      \begin{align*}
+        |f(x) - f(y)| \le c|x - y|,\\
+        |x - y| \le c|x - y|,\\
+        1 \le c.
+      \end{align*}
+      Thus a contradiction, therefore it must be the case that $y$ is unique.
+    \end{proof}
+    \vspace{.25in}
+
+    \item Finally prove that if $x$ is any arbitrary point in $\Reals$, then the sequence $(x,f(x), f(f(x)),\dots)$ converges to the $y$ defined in part b.\\
+    \begin{proof}
+      Suppose some $x \in \Reals$ and $y$ with the property that $y = f(y)$. By substitution we get the following inequality,
+      \begin{equation*}
+        |f(x) - y| \le c|x - y|.
+      \end{equation*}
+      Similarly to part $b$ applying this inequality to our sequence yields an upper bound,
+      \begin{align*}
+        |f^n(x) - y| &\le c|f^{n_1}(x) - y|\\
+         &\le c^n|x - y|.
+      \end{align*}
+      Since $0<c<1$ by Example 2.5.3 we know that $c^m|x - y| \to 0$. By the Order Limit Theorem and Absolute Convergence we know that $f^n(x) - y \to 0$.
+      Finally by the Algebraic Limit Theorem we know that $\lim f^n(x) \to y$.
+    
+    \end{proof}
+  \end{enumerate}
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+
+\begin{exercise}{5} Suppose that $f: (0,1) \to \Reals$ is continuous and that $\lim_{x \to 0}f(x) = \infty$ and $\lim_{x \to 1}f(x) = \infty$. Show that $f$ obtains a minimum on $(0,1)$.\\
+
+  \begin{proof} 
+    Suppose that $f: (0,1) \to \Reals$ is continuous and that $\lim_{x \to 0}f(x) = \infty$ and $\lim_{x \to 1}f(x) = \infty$. By the definition of infinite limit, for all $M>0$ we can find a $\delta_0, \delta_1 > 0$
+    such that whenever $0< |x - 0| < \delta_0$ and $0< |x - 1| < \delta_1$ it follows that $f(x)>M$. let $a = 0 +\delta_0$ and $b = 1 - \delta_1$ now consider the closed interval $[a , b]$.
+    Note that $[a , b] \subseteq (0,1)$. By Example 3.2.9(ii) we know that $[a,b]$ is closed and by definition its bounded above by $1$ and below by $0$, thus $[a,b]$ is a compact set. By Theorem 4.4.1 we can conclude that $f$ is continuous on $[a,b]$.  
+    By the Extreme Value Theorem there exists some $x_0 \in [a , b]$ such that $f(x_0) \le f(x)$. Note that $x_0 \in (0,1)$ and thus $f$ obtains a minimum on $(0,1)$
+  \end{proof}
+  \end{exercise}
+\vspace{.5in}
+
+
+
+
+\begin{exercise}{6} Show that if $f:[a,b] \to \Reals$ is strictly increasing and continuous, then it has a continuous inverse function $f^{-1}:[f(a),f(b)] \to [a,b]$. Use this result to show that $x^{1/n}$ is continuous for each $n\in \Nats$.\\
+
+\begin{proof}
+  Suppose $f:[a,b] \to \Reals$ is strictly increasing and continuous. Recall that to prove a function $f$ has an inverse we must demonstrate
+  that $f$ is a bijection.\\
+  
+  Suppose $x,y \in [a,b]$ such that $x \neq y$. Without loss of generality lets suppose that $x > y$. Since $f$ is a strictly increasing function if 
+  $x > y$ then it follows that $f(x) > f(y)$ and therefore $f(x) \neq f(y)$. Thus $f$ is an injection\\
+
+  Suppose $y \in  [f(a),f(b)]$. By definition we know that $f(a) \le y \le f(b)$. Since $f$ is continuous we know that by the Intermediate Value Theorem there exists some 
+  $x \in [a,b]$ where $f(x) = y$. Thus $f$ is surjective on $f:[a,b] \to [f(a),f(b)]$. Since $f$ is a bijection we know there exists an inverse function $f^{-1}:[f(a),f(b)] \to [a,b]$.\\
+
+ Recall that $f$ is continuous and by definition for any $c \in [a,b]$, for all $\epsilon_0 >0$ there exists a $\delta_0> 0$ such that whenever $|x - c|<\delta_0$ it follows that $|f(x) - f(c)|< \epsilon_0$.
+ Now consider $f^{1}$ and let $z \in [f(a),f(b)]$ with the property that $f(c) = z$. Consider $\delta = \epsilon_0$ then for all $y \in [f(a),f(b)]$ with the property that $f(x) = y$, $|y - z|< \delta$ implies,
+  \begin{align*}
+   |f^{-1}(y) - f^{-1}(z)| &= |f^{-1}(f(x)) - f^{-1}(f(c))|,\\
+   &= |x - c|,\\
+   &< \delta = \epsilon_0.
+   \end{align*} 
+Thus $f^{-1}$ is continuous. \\
+
+Using this result to show that $f(x) = x^{1/n}$ is continuous for each $n in \Nats$. Consider the strictly increasing and continuous function $g(x) = x^n$, and note that $f \circ g = (x^n)^{1/n} = x$ thus by 
+our previous result  $f(x) = x^{1/n}$ is continuous.
+
+\end{proof}
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+
+
+
+\begin{exercise}{7} Suppose $f: [0,1] \to \Reals$ is continuous and that $f([0,1]) \subseteq (0,1)$. Prove that there is a solution of the equation $f(x) = x$. 
+  
+\begin{proof}
+  Suppose $f: [0,1] \to \Reals$ is continuous and that $f([0,1]) \subseteq (0,1)$. Consider a continuous function $g:[0,1] \to \Reals$
+  defined by $g(x) = f(x) - x$. Clearly when $g(x) = 0$ we have a solution for $f(x) = x$. Consider $g(0) = f(0) - 0$, and suppose $g(0) \neq 0$ (otherwise we would have a solution). Then since $f(0) \in f([0,1])$ which is a 
+  subset of $(0,1)$ it must be the case that $g(0) > 0$. Similarly consider $g(1) = f(1) - 1$, and suppose $g(1) \neq 1$. Since $f(0) \in f([0,1])$ which is a 
+  subset of $(0,1)$ it follows that $g(1) < 1$. By The Intermediate Value Theorem that since $g$ is continuous and $g(1)<0<g(0)$ there must exist a point $c \in (a,b)$ such that $g(c) = 0$.
+  
+\end{proof}
+\end{exercise}
+\vspace{.5in}
+
+
+
+
+
+
+\begin{exercise}{8} If $f: [a,b] \to \Reals$ is one-to-one, then there exists an inverse function $f^{-1}$ defined on the range of $f$ given by $f^{-1}(y) = x$
+  where $y = f(x)$. In Exercise 4.5.8 we saw that if $f$ is continuous on $[a,b]$ then $f^{-1}$ is continuous on its domain. Let's add the assumption that $f$ is differentiable 
+  on $[a,b]$ with $f'\neq 0$ for all $x \in [a,b]$. Show that $f^{-1}$ is differentiable with
+  \begin{equation*}
+    (f^{-1})'(y) = \dfrac{1}{f'(x)}, \text{ where $y = f(x)$}
+  \end{equation*}
+
+
+  \begin{proof} Suppose  $f: [a,b] \to \Reals$ is one-to-one, continuous, differentiable function with an inverse function $f^{-1}$ defined on $f^{-1}: [f(a),f(b)] \to [a,b]$ and the property that $f'\neq 0$.    
+    Let $f(c) \in [f(a),f(b)]$ and consider $f(y_n) \subseteq [f(a),f(b)]$ such that $f(y_n) \to f(c)$. By the definition of the derivative using the sequential characterization of a limit,
+    \begin{equation*}
+      f'^{-1}(f(c)) = \lim_{n \to \infty} \dfrac{f'^{-1}(f(y_n)) - f'^{-1}(f(c))}{f(y_n) - f(c)}.
+    \end{equation*}
+    Simplifying to get our limit in terms of $f$ rather than $f^{-1}$ and solving using the algebraic limit theorem,
+    \begin{align*}
+      f'^{-1}(f(c)) &= \lim_{n \to \infty} \dfrac{f'^{-1}(f(y_n)) - f'^{-1}(f(c))}{f(y_n) - f(c)},\\
+       &= \lim_{n \to \infty} \dfrac{y_n - c}{f(y_n) - f(c)},\\
+       &= \lim_{n \to \infty} \left(\dfrac{f(y_n) - f(c)}{y_n - c}\right)^{-1},\\
+       &= \dfrac{1}{f'(c)}.
+    \end{align*}
+
+
+
+  \end{proof}
+
+
+
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
